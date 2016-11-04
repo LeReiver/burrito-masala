@@ -1,0 +1,145 @@
+body {
+  color: #EE6111;
+  font-family: 'Scada', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+body p {
+  color: #036128;
+  font-family: 'Scada', sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+body a {
+  color: #EE6111 ;
+  text-decoration: none;
+}
+body a:hover {
+  color: #036128;
+}
+nav {
+  border-top: #CF0021 solid 4px;
+  border-bottom: #4DAF18 solid 4px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(138, 194, 241, 0.6);
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+}
+nav ul li {
+  display: inline-block;
+  float: left;
+}
+nav ul li a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #036128;
+}
+nav a h1 {
+  margin: 10px 65px 0 0;
+  font-weight: 700;
+  font-size: 2em;
+  font-family: 'Abel', sans-serif;
+  color: #EE6111;
+  text-align: center;
+  padding: 5px 0;
+  text-decoration: none;
+}
+nav a h1:hover {
+  color: #036128;
+}
+nav #top-border {
+  border-bottom: #CF0021 solid 4px;
+}
+header {
+  background-image: linear-gradient(rgba(100, 100, 100, 0.35), rgba(0, 0, 0, 0.35)), url("../images/hero_mobile.jpg");
+  margin-top: 60px;
+  padding: 0;
+  width: 100vw;
+  height: 20vh;
+  background-size: cover;
+  background-color: rgba(229, 229, 229, 0.3);
+  overflow-y: hidden;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: scroll;
+  position: relative;
+  z-index: 0;
+}
+header h2 {
+  text-align: center;
+  margin: 150px auto 0 auto;
+  font-size: 1.5em;
+  font-weight: 800;
+  color: rgba(225, 225, 225, 0.9);
+}
+main {
+  border-top: #4DAF18 solid 4px;
+}
+main h1 {
+  font-size: 1.75em;
+  font-family: 'Abel', sans-serif;
+  color: #CF0021 ;
+  font-weight: 600;
+  padding-top: 20px;
+}
+main ul li {
+  display: block;
+  color: #036128;
+}
+main location {
+  text-align: center;
+  width: 100%;
+  margin: 60px auto;
+  border-top: #036128 solid 4px;
+}
+main map {
+  display: block;
+  margin: 30px;
+  border: #EE6111  solid 4px;
+}
+main gallery ul {
+  text-align: center;
+}
+main gallery ul li {
+  display: inline-block;
+  margin: 20px 0 0 0;
+  border-top: #CF0021  solid 2px;
+}
+main gallery ul li img {
+  border-bottom: #4DAF18  solid 2px;
+}
+main gallery h1 {
+  font-size: 1.75em;
+  font-family: 'Abel', sans-serif;
+  color: #CF0021 ;
+  font-weight: 600;
+  padding-top: 20px;
+  text-align: center;
+}
+main ordering {
+  margin: 100px;
+}
+main ordering h1 {
+  text-align: center;
+}
+main ordering h2 {
+  text-align: center;
+  font-size: 1.25em;
+  font-family: 'Abel', sans-serif;
+  color: #CF0021 ;
+  font-weight: 600;
+  padding-top: 20px;
+}
