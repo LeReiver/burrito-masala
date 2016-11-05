@@ -18,57 +18,37 @@ body a:hover {
   color: #036128;
 }
 nav {
-  border-top: #CF0021 solid 4px;
-  border-bottom: #4DAF18 solid 4px;
-}
-nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(138, 194, 241, 0.6);
+  background-color: white;
   position: fixed;
-  /* Set the navbar to fixed position */
   top: 0;
-  /* Position the navbar at the top of the page */
   width: 100%;
-  /* Full width */
-}
-nav ul li {
-  display: inline-block;
-  float: left;
-}
-nav ul li a {
-  display: block;
-  color: white;
-  padding: 16px;
-  text-decoration: none;
-}
-nav ul li a:hover {
-  color: #036128;
+  border-top: #CF0021 solid 4px;
+  border-bottom: #4DAF18 solid 4px;
+  z-index: 3;
 }
 nav a h1 {
-  margin: 10px 65px 0 0;
-  font-weight: 700;
-  font-size: 2em;
+  text-align: center;
+  margin: 0 ;
+  font-weight: 900;
+  font-size: 3em;
   font-family: 'Abel', sans-serif;
   color: #EE6111;
-  text-align: center;
   padding: 5px 0;
   text-decoration: none;
 }
 nav a h1:hover {
   color: #036128;
 }
-nav #top-border {
-  border-bottom: #CF0021 solid 4px;
-}
 header {
   background-image: linear-gradient(rgba(100, 100, 100, 0.35), rgba(0, 0, 0, 0.35)), url("../images/hero_mobile.jpg");
   margin-top: 60px;
   padding: 0;
-  width: 100vw;
-  height: 20vh;
+  width: 100%;
+  height: 60vw;
   background-size: cover;
   background-color: rgba(229, 229, 229, 0.3);
   overflow-y: hidden;
@@ -76,16 +56,17 @@ header {
   background-position: top center;
   background-attachment: scroll;
   position: relative;
-  z-index: 0;
 }
 header h2 {
   text-align: center;
-  margin: 150px auto 0 auto;
+  margin: 0 auto;
+  padding-top: 150px;
   font-size: 1.5em;
-  font-weight: 800;
+  font-weight: 500;
   color: rgba(225, 225, 225, 0.9);
 }
 main {
+  z-index: 0;
   border-top: #4DAF18 solid 4px;
 }
 main h1 {
@@ -99,10 +80,10 @@ main ul li {
   display: block;
   color: #036128;
 }
-main location {
+main #location {
   text-align: center;
   width: 100%;
-  margin: 60px auto;
+  margin: 0 auto;
   border-top: #036128 solid 4px;
 }
 main map {
@@ -110,18 +91,18 @@ main map {
   margin: 30px;
   border: #EE6111  solid 4px;
 }
-main gallery ul {
+main #gallery ul {
   text-align: center;
 }
-main gallery ul li {
+main #gallery ul li {
   display: inline-block;
   margin: 20px 0 0 0;
   border-top: #CF0021  solid 2px;
 }
-main gallery ul li img {
+main #gallery ul li img {
   border-bottom: #4DAF18  solid 2px;
 }
-main gallery h1 {
+main #gallery h1 {
   font-size: 1.75em;
   font-family: 'Abel', sans-serif;
   color: #CF0021 ;
@@ -129,17 +110,26 @@ main gallery h1 {
   padding-top: 20px;
   text-align: center;
 }
-main ordering {
-  margin: 100px;
+main #ordering {
+  margin: 0;
 }
-main ordering h1 {
+main #ordering h1 {
   text-align: center;
 }
-main ordering h2 {
+main #ordering h2 {
   text-align: center;
   font-size: 1.25em;
   font-family: 'Abel', sans-serif;
   color: #CF0021 ;
   font-weight: 600;
-  padding-top: 20px;
+  padding-top: 0;
+}
+main #ordering h3 {
+  text-align: start;
+  padding: 10px 0 0 90px;
+  font-size: 1.25em;
+  font-family: 'Abel', sans-serif;
+  color: #EE6111 ;
+  font-weight: 600;
+  line-height: 80%;
 }
