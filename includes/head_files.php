@@ -13,5 +13,8 @@
 <link href="https://fonts.googleapis.com/css?family=Abel|Archivo+Scada:400,700" rel="stylesheet">
 <link rel="stylesheet" href="includes/styles/reset.css.php">
 <link rel="stylesheet" href="includes/styles/helper.css.php">
+<link rel="stylesheet" href="includes/styles/grid.css.php">
 <link rel="stylesheet" href="includes/styles/style.css">
-<script src="includes/scripts/jquery-1.11.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->

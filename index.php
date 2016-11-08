@@ -41,21 +41,19 @@
         <!--Gallery section-->
         <section id="gallery">
             <h1>Our Food</h1>
-            <ul>
-                <li><img src="includes/images/meatBurrito.jpg">Pork Burrito</li>
-                <li><img src="includes/images/vegBurrito.jpg">Sambar Burrito</li>
-                <br>
-                <li><img src="includes/images/riceBowl.jpg">Lamb Curry Bowl</li>
-                <li><img src="includes/images/vegBowl.jpg">Chile Relleno Bowl</li>
-                <br>
-                <li><img src="includes/images/indianBowl.jpg">Aloo Gobi Masala Bowl</li>
-                <li><img src="includes/images/fifthStreet.jpg">3rd Street Carts</li>
+            <ul class="section group">
+                <li class="col span_6_of_12"><img src="includes/images/meatBurrito.jpg" alt="Pork Burrito">Pork Burrito</li>
+                <li class="col span_6_of_12"><img src="includes/images/vegBurrito.jpg" alt="Sambar Burrito">Sambar Burrito</li>
+                <li class="col span_6_of_12"><img src="includes/images/riceBowl.jpg" alt="Lamb Curry Bowl">Lamb Curry Bowl</li>
+                <li class="col span_6_of_12"><img src="includes/images/vegBowl.jpg" alt="Chile Relleno Bowl">Chile Relleno Bowl</li>
+                <li class="col span_6_of_12"><img src="includes/images/indianBowl.jpg" alt="Aloo Gobi Masala Bowl">Aloo Gobi Masala Bowl</li>
+                <li class="col span_6_of_12"><img src="includes/images/fifthStreet.jpg" alt="3rd Street Carts">3rd Street Carts</li>
             </ul>
         </section>
         <!--Ordering section-->
         <section id="ordering">
             <h1>How To Order</h1>
-            <h3>1. Choose either Burrito or Bowl</h3>
+            <h3>1. Choose either Burrito or Bowl - $7 each</h3>
             <h3>2. Choose either Meat or Veggie</h3>
             <h3>3. Choose type of Rice</h3>
             <h3>4. Choose your Toppings</h3>
