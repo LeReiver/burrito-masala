@@ -5,7 +5,7 @@
  * Date: 11/8/16
  * Time: 10:07 AM
  * 
- * A file that holds head files
+ * A file that holds the projects head files
  */
 ?>
 <meta charset="utf-8">

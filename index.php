@@ -4,18 +4,23 @@
  * User: mike
  * Date: 11/1/16
  * Time: 11:43 AM
+ *
+ * A website for a fictitious fusion food cart in Portland, OR
  */
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Includes head files file-->
     <?php require_once('includes/head_files.php'); ?>
     <title>Burrito Masala</title>
 </head>
 
 <body>
+    <!--Section holds id for top anchor. Non breaking space used to compensate for navigation height. -->
     <section id="top">&nbsp;</section>
+    <!--Header section-->
     <header>
         <nav>
             <a href="#top"><h1>Burrito Masala</h1></a>
@@ -24,6 +29,7 @@
     </header>
     
     <main>
+        <!--Location section-->
         <section id="location">
             <h1>Find Us Here</h1>
             <map>
@@ -32,6 +38,7 @@
             </map>
             <p>313 SW Alder, Portland, OR<br>We are open 7 days a week<br>11am-7pm</p>
         </section>
+        <!--Gallery section-->
         <section id="gallery">
             <h1>Our Food</h1>
             <ul>
@@ -45,6 +52,7 @@
                 <li><img src="includes/images/fifthStreet.jpg">3rd Street Carts</li>
             </ul>
         </section>
+        <!--Ordering section-->
         <section id="ordering">
             <h1>How To Order</h1>
             <h3>1. Choose either Burrito or Bowl</h3>
@@ -91,7 +99,7 @@
             </ul>
         </section>
     </main>
-    
+    <!-- Footer section-->
     <footer>
         <section id="bois">
             <h3>Our Story</h3>
@@ -112,15 +120,15 @@
         </section>
         <section id="social">
             <h3>Follow Us</h3>
-            <a href="https://twitter.com/?lang=en"><img src="includes/images/twitter_wht.png" width="50px"></a>
+            <a href="https://twitter.com/?lang=en"><img src="includes/images/twitter_wht.png"></a>
             <h3>Like Us</h3>
-            <a href="https://www.facebook.com/"><img src="includes/images/facebook_wht.png" width="50px"></a>
+            <a href="https://www.facebook.com/"><img src="includes/images/facebook_wht.png"></a>
         </section>
         <section id="phone">
             <h3>Text In Your Order</h3>
-            <a href="sms:503-555-5555"><img src="includes/images/text_wht.png" width="50px"></a>
+            <a href="sms:503-555-5555"><img src="includes/images/text_wht.png"></a>
             <h3>Call In Your Order</h3>
-            <a href="tel:503-555-5555"><img src="includes/images/talk_wht.png" width="50px" ></a>
+            <a href="tel:503-555-5555"><img src="includes/images/talk_wht.png"></a>
         </section>
         <section id="copyright">
             <p>&copy; 2016 Burrito Masala</p>

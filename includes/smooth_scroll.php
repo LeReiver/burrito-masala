@@ -5,7 +5,7 @@
  * Date: 11/8/16
  * Time: 10:05 AM
  *
- * A function that provides smooth animated scrolling
+ * A function that provides smooth animated scrolling. Code by Chris Coyier: https://css-tricks.com/snippets/jquery/smooth-scrolling/
  */
 require_once ('head_files.php')
 ?>

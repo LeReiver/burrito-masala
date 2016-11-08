@@ -155,7 +155,6 @@ main #ordering ul li {
   color: #EE6111 ;
   font-weight: 600;
   line-height: 120%;
-  list-style: disc;
   padding-left: .5em;
 }
 main #ordering ul.left {
@@ -202,6 +201,9 @@ footer a:hover {
 footer P {
   margin: 20px 20px;
   font-size: 1.125em;
+}
+footer img {
+  width: 50px;
 }
 footer #bios {
   padding: 20px 0;
