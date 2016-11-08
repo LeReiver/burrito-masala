@@ -34,7 +34,7 @@
             <h1>Find Us Here</h1>
             <map>
                 <a href="https://www.google.com/maps/place/313+SW+Alder+St,+Portland,+OR+97204/@45.5190208,-122.675541,17z/data=!3m1!4b1!4m5!3m4!1s0x54950a05c1ee2db9:0xce7ecf88b6d8e74b!8m2!3d45.5190208!4d-122.675541" target="_blank" >
-                    <img align="center" src="includes/images/map.png"></a>
+                    <img src="includes/images/map.png"></a>
             </map>
             <p>313 SW Alder, Portland, OR<br>We are open 7 days a week<br>11am-7pm</p>
         </section>
@@ -42,7 +42,7 @@
         <section id="gallery">
             <h1>Our Food</h1>
             <ul class="section group">
-                <li class="col span_6_of_12"><img src="includes/images/meatBurrito.jpg" alt="Pork Burrito">Pork Burrito</li>
+                <li class="col span_6_of_12"><img src="includes/images/meatBurrito.jpg" alt="Pork Burrito">Pork Verde Burrito</li>
                 <li class="col span_6_of_12"><img src="includes/images/vegBurrito.jpg" alt="Sambar Burrito">Sambar Burrito</li>
                 <li class="col span_6_of_12"><img src="includes/images/riceBowl.jpg" alt="Lamb Curry Bowl">Lamb Curry Bowl</li>
                 <li class="col span_6_of_12"><img src="includes/images/vegBowl.jpg" alt="Chile Relleno Bowl">Chile Relleno Bowl</li>
@@ -53,7 +53,7 @@
         <!--Ordering section-->
         <section id="ordering">
             <h1>How To Order</h1>
-            <h3>1. Choose either Burrito or Bowl - $7 each</h3>
+            <h3>1. Choose either Burrito or Bowl <span id="price">$8</span></h3>
             <h3>2. Choose either Meat or Veggie</h3>
             <h3>3. Choose type of Rice</h3>
             <h3>4. Choose your Toppings</h3>
@@ -82,7 +82,7 @@
                 <li>Raita</li>
                 <li>Sour cream</li>
                 <li>Guacamole</li>
-                <li>&nbsp;&nbsp;($.75 extra!)</li>
+                <li>&nbsp;&nbsp;(<span id="price">$.75</span> extra!)</li>
             </ul>
             <ul class="right">
                 <li>Cheese</li>
@@ -118,9 +118,13 @@
         </section>
         <section id="social">
             <h3>Follow Us</h3>
-            <a href="https://twitter.com/?lang=en"><img src="includes/images/twitter_wht.png"></a>
+            <a href="https://twitter.com/?lang=en" target="_blank"><img src="includes/images/twitter_wht.png"></a>
             <h3>Like Us</h3>
-            <a href="https://www.facebook.com/"><img src="includes/images/facebook_wht.png"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="includes/images/facebook_wht.png"></a>
+            <h3>Yelp Us</h3>
+            <a href="https://yelp.com/?lang=en" target="_blank"><img src="includes/images/yelp_wht.png"></a>
+            <h3>Pin Us</h3>
+            <a href="https://www.pinterest.com/" target="_blank"><img src="includes/images/pinterest_wht.png"></a>
         </section>
         <section id="phone">
             <h3>Text In Your Order</h3>
