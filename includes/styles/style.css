@@ -2,13 +2,6 @@ body {
   color: #EE6111;
   font-family: 'Scada', sans-serif;
   font-size: 1em;
-  font-weight: 400;
-}
-body p {
-  color: #036128;
-  font-family: 'Scada', sans-serif;
-  font-size: 1.25em;
-  font-weight: 500;
 }
 body a {
   color: #EE6111 ;
@@ -43,9 +36,14 @@ nav a h1 {
 nav a h1:hover {
   color: #036128;
 }
+nav #top {
+  margin-top: -40px;
+  line-height: 10%;
+  font-size: .5em;
+}
 header {
   background-image: linear-gradient(rgba(100, 100, 100, 0.35), rgba(0, 0, 0, 0.35)), url("../images/hero_mobile.jpg");
-  margin-top: 60px;
+  margin-top: 50px;
   padding: 0;
   width: 100%;
   height: 60vw;
@@ -59,8 +57,8 @@ header {
 }
 header h2 {
   text-align: center;
-  margin: 0 auto;
-  padding-top: 150px;
+  margin: 0 auto 30px auto;
+  padding: 125px 0 60px 0;
   font-size: 1.5em;
   font-weight: 500;
   color: rgba(225, 225, 225, 0.9);
@@ -86,18 +84,30 @@ main #location {
   margin: 0 auto;
   border-top: #036128 solid 4px;
 }
+main #location p {
+  color: #EE6111;
+  font-family: 'Scada', sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+}
 main map {
   display: block;
   margin: 30px;
   border: #EE6111  solid 4px;
 }
+main #gallery {
+  padding: 0 0 20px 0;
+}
 main #gallery ul {
   text-align: center;
 }
 main #gallery ul li {
+  background-color: #EE6111;
   display: inline-block;
-  margin: 20px 0 0 0;
+  margin: 0;
+  padding-bottom: 10px;
   border-top: #CF0021  solid 2px;
+  font-size: 1.25em;
 }
 main #gallery ul li img {
   border-bottom: #4DAF18  solid 2px;
@@ -111,25 +121,112 @@ main #gallery h1 {
   text-align: center;
 }
 main #ordering {
-  margin: 0;
+  background-color: rgba(138, 194, 241, 0.45);
+  padding: 0 0 20px 0;
+  margin-top: -20px;
+  border-top: #CF0021 solid 4px;
 }
 main #ordering h1 {
   text-align: center;
 }
 main #ordering h2 {
   text-align: center;
-  font-size: 1.25em;
+  font-size: 1.75em;
   font-family: 'Abel', sans-serif;
   color: #CF0021 ;
   font-weight: 600;
-  padding-top: 0;
+  padding: 10px 0;
 }
 main #ordering h3 {
   text-align: start;
-  padding: 10px 0 0 90px;
+  padding: 10px 0 0 20px;
   font-size: 1.25em;
   font-family: 'Abel', sans-serif;
   color: #EE6111 ;
   font-weight: 600;
   line-height: 80%;
+}
+main #ordering ul {
+  padding-left: .5em;
+}
+main #ordering ul li {
+  font-size: 1.2em;
+  font-family: 'Abel', sans-serif;
+  color: #EE6111 ;
+  font-weight: 600;
+  line-height: 120%;
+  list-style: disc;
+  padding-left: .5em;
+}
+main #ordering ul.left {
+  float: left;
+}
+main #ordering ul.right {
+  float: right;
+  padding-right: 4em;
+}
+main #ordering ul.bottom {
+  clear: both;
+}
+footer {
+  background-color: #036128;
+  color: #FFF;
+  font-family: 'Scada', sans-serif;
+  padding: 10px 0;
+}
+footer h3 {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Abel', sans-serif;
+  color: #EE6111 ;
+  font-weight: 600;
+  line-height: 80%;
+}
+footer h4 {
+  text-align: start;
+  padding: 10px 0 0 20px;
+  font-size: 1.25em;
+  font-family: 'Abel', sans-serif;
+  color: #EE6111 ;
+  font-weight: 600;
+  line-height: 80%;
+}
+footer a {
+  color: #EE6111 ;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #FFF;
+}
+footer P {
+  margin: 20px 20px;
+  font-size: 1.125em;
+}
+footer #bios {
+  padding: 20px 0;
+}
+footer #bios h4 {
+  text-align: start;
+  padding: 10px 0 0 20px;
+  margin: 0 0 20px 0;
+  font-size: 1em;
+  font-family: 'Abel', sans-serif;
+  color: #FFF ;
+  font-weight: 600;
+  line-height: 80%;
+}
+footer #social {
+  text-align: center;
+}
+footer #social h3 {
+  text-align: center;
+}
+footer #phone {
+  text-align: center;
+}
+footer #copyright {
+  text-align: center;
+  color: #EE6111;
+  padding-top: 10px;
 }
