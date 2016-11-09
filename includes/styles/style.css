@@ -58,8 +58,8 @@ header {
 header h2 {
   text-align: center;
   margin: 0 auto 30px auto;
-  padding: 125px 0 60px 0;
-  font-size: 1.5em;
+  padding: 175px 0 60px 0;
+  font-size: 6vw;
   font-weight: 500;
   color: rgba(225, 225, 225, 0.9);
 }
@@ -92,13 +92,11 @@ main #location p {
   font-family: 'Scada', sans-serif;
   font-size: 1.25em;
   font-weight: 500;
+  margin-top: 10px;
 }
 main map {
   display: block;
-  margin: 30px 0 10px 0;
-}
-main map img {
-  display: inline-block;
+  margin: 30px 0 20px 0;
 }
 main #gallery {
   padding: 0 0 20px 0;
@@ -122,7 +120,7 @@ main #gallery h1 {
   font-family: 'Abel', sans-serif;
   color: #CF0021 ;
   font-weight: 600;
-  padding-top: 20px;
+  padding: 20px 0;
   text-align: center;
 }
 main #ordering {
@@ -211,7 +209,7 @@ footer P {
   font-size: 1.125em;
 }
 footer img {
-  width: 50px;
+  width: 45px;
 }
 footer #bios {
   padding: 10px 0;
@@ -239,4 +237,142 @@ footer #copyright {
   text-align: center;
   color: #EE6111;
   padding-top: 40px;
+}
+/*  LAYOUT ABOVE 769 PIXELS */
+@media only screen and (min-width: 769px) {
+  header h2 {
+    padding: 325px 0 60px 0;
+    font-size: 5vw;
+  }
+  main #location p {
+    padding-top: 10%;
+    font-size: 2.5vw;
+  }
+  main #ordering h3 {
+    margin-left: 150px;
+  }
+  main #ordering ul.li {
+    margin-left: 150px;
+  }
+  main #ordering ul.right {
+    margin-right: 150px;
+  }
+  footer p {
+    font-size: 130%;
+  }
+  footer #social {
+    padding-top: 55px;
+    text-align: center;
+  }
+  footer #social h3 {
+    text-align: center;
+  }
+  footer #social h2 {
+    font-size: 1.75vw;
+    padding-top: 40px;
+  }
+  footer #social img {
+    padding-top: 10px;
+    width: 60px;
+  }
+  footer #phone {
+    display: none;
+  }
+  footer #phone_desktop {
+    text-align: center;
+  }
+  footer #phone_desktop h3 {
+    font-size: 150%;
+    text-align: center;
+  }
+  footer #phone_desktop p {
+    font-size: 150%;
+  }
+  footer #copyright {
+    margin-top: -40px;
+  }
+}
+@media only screen and (min-width: 1042px) {
+  header h2 {
+    padding: 525px 0 60px 0;
+    font-size: 4vw;
+  }
+  main h1 {
+    font-size: 3vw;
+  }
+  main #gallery h1 {
+    font-size: 3vw;
+  }
+  main #location h1 {
+    font-size: 3vw;
+  }
+  main #ordering h2 {
+    font-size: 3vw;
+  }
+  main #ordering h3 {
+    margin-left: 250px;
+    font-size: 2vw;
+  }
+  main #ordering li {
+    margin-left: 250px;
+    font-size: 3vw;
+  }
+  main #ordering ul.right {
+    margin-right: 250px;
+  }
+  main #ordering ul li {
+    font-size: 2vw;
+  }
+  footer h3 {
+    font-size: 2.5vw;
+  }
+  footer h4 {
+    font-size: 2.5vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header {
+    background-size: 100%;
+    height: 100%;
+  }
+  header h2 {
+    padding: 325px 0 30px 0;
+    font-size: 3vw;
+  }
+  main h1 {
+    font-size: 2.5vw;
+  }
+  main #gallery h1 {
+    font-size: 2.5vw;
+  }
+  main #location h1 {
+    font-size: 2.5vw;
+  }
+  main #location map {
+    display: block;
+    margin: 30px 0 20px 0;
+    padding-left: 60px;
+    width: 90%;
+  }
+  main #location p {
+    font-size: 2vw;
+  }
+  main #ordering h2 {
+    font-size: 2.5vw;
+  }
+  main #ordering h3 {
+    margin-left: 350px;
+  }
+  main #ordering li {
+    margin-left: 350px;
+  }
+  main #ordering ul.right {
+    margin-right: 350px;
+  }
+  footer h3 {
+    font-size: 2.25vw;
+  }
+  footer h4 {
+    font-size: 2.25vw;
+  }
 }

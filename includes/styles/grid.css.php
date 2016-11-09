@@ -24,6 +24,13 @@
 	float:left;
 	margin: 1% 0 1% 0;
 }
+
+.col_map {
+	display: block;
+	float:left;
+	margin: 2%;
+}
+
 .col:first-child { margin-left: 0; }
 
 /*  GROUPING  */
@@ -81,6 +88,8 @@
   	width: 8.333%;
 }
 
+
+
 /*  GO FULL WIDTH BELOW 769 PIXELS */
 @media only screen and (max-width: 769px) {
     .col {  margin: 1% 0 1% 0; }
@@ -88,5 +97,15 @@
     .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
         width: 100%;
 	}
+
+	.col_map {
+		display: block;
+		float:left;
+		margin: 1% 0 1% 0;
+	}
+	#phone_desktop {
+		display: none;
+	}
+
 }
 

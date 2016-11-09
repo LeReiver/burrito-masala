@@ -30,13 +30,13 @@
     
     <main>
         <!--Location section-->
-        <section id="location">
+        <section id="location" class="section group">
             <h1>Find Us Here</h1>
             <map>
                 <a href="https://www.google.com/maps/place/313+SW+Alder+St,+Portland,+OR+97204/@45.5190208,-122.675541,17z/data=!3m1!4b1!4m5!3m4!1s0x54950a05c1ee2db9:0xce7ecf88b6d8e74b!8m2!3d45.5190208!4d-122.675541" target="_blank" >
-                    <img src="includes/images/map.png"></a>
+                    <img  class="col_map span_6_of_12"  src="includes/images/map.png"></a>
             </map>
-            <p>313 SW Alder, Portland, OR<br>We are open 7 days a week<br>11am-7pm</p>
+            <p >313 SW Alder, Portland, OR<br>We are open 7 days a week<br>11am-7pm</p>
         </section>
         <!--Gallery section-->
         <section id="gallery">
@@ -98,16 +98,20 @@
         </section>
     </main>
     <!-- Footer section-->
-    <footer>
+    <footer  class="section group">
         <section id="bois">
+            <div  class="col span_6_of_12">
             <h3>Our Story</h3>
+            <div  class="col span_12_of_12">
             <h4>Prasad</h4>
                 <p>
                     Champollion cosmos preserve and cherish that pale blue dot tesseract, another world?
                     Great turbulent clouds the ash of stellar alchemy cosmic ocean? Finite but unbounded
                     ship of the imagination gathered by gravity and billions upon billions upon billions
-                    upon billions upon billions upon billions upon billions.
+                    upon billions upon billions.
                 </p>
+            </div>
+            <div  class="col span_12_of_12">
             <h4>Ramona</h4>
                 <p>
                     Hypatia realm of the galaxies a very small stage in a vast
@@ -115,22 +119,41 @@
                     years rich in heavy atoms, paroxysm of global death rich in mystery courage of our
                     questions decipherment, the only home we've ever known shores of the cosmic ocean!
                 </p>
+            </div>
         </section>
         <section id="social">
-            <h3>Follow Us</h3>
-            <a href="https://twitter.com/?lang=en" target="_blank"><img src="includes/images/twitter_wht.png"></a>
-            <h3>Like Us</h3>
-            <a href="https://www.facebook.com/" target="_blank"><img src="includes/images/facebook_wht.png"></a>
-            <h3>Yelp Us</h3>
-            <a href="https://yelp.com/?lang=en" target="_blank"><img src="includes/images/yelp_wht.png"></a>
-            <h3>Pin Us</h3>
-            <a href="https://www.pinterest.com/" target="_blank"><img src="includes/images/pinterest_wht.png"></a>
+            <div  class="col span_3_of_12">
+                <h3>Follow Us</h3>
+                <a href="https://twitter.com/?lang=en" target="_blank"><img src="includes/images/twitter_wht.png"></a>
+            </div>
+            <div  class="col span_3_of_12">
+                <h3>Like Us</h3>
+                <a href="https://www.facebook.com/" target="_blank"><img src="includes/images/facebook_wht.png"></a>
+            </div>
+            <div  class="col span_3_of_12">
+                <h3>Yelp Us</h3>
+                <a href="https://yelp.com/?lang=en" target="_blank"><img src="includes/images/yelp_wht.png"></a>
+            </div>
+            <div  class="col span_3_of_12">
+                <h3>Pin Us</h3>
+                <a href="https://www.pinterest.com/" target="_blank"><img src="includes/images/pinterest_wht.png"></a>
+            </div>
         </section>
-        <section id="phone">
-            <h3>Text In Your Order</h3>
-            <a href="sms:503-555-5555"><img src="includes/images/text_wht.png"></a>
-            <h3>Call In Your Order</h3>
-            <a href="tel:503-555-5555"><img src="includes/images/talk_wht.png"></a>
+        <section id="phone"  class="section group">
+            <div  class="col span_6_of_12">
+                <h3>Text In Your Order</h3>
+                <a href="sms:503-555-5555"><img src="includes/images/text_wht.png"></a>
+            </div>
+            <div  class="col span_6_of_12">
+                <h3>Call In Your Order</h3>
+                <a href="tel:503-555-5555"><img src="includes/images/talk_wht.png"></a>
+            </div>
+        </section>
+        <section id="phone_desktop">
+            <div>
+                <h3>Call Us</h3>
+                <p>503-555-5555</p>
+            </div>
         </section>
         <section id="copyright">
             <p>&copy; 2016 Burrito Masala</p>
