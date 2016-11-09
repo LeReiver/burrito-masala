@@ -248,9 +248,6 @@ footer #copyright {
     padding-top: 10%;
     font-size: 2.5vw;
   }
-  main #ordering h3 {
-    margin-left: 150px;
-  }
   main #ordering ul.li {
     margin-left: 150px;
   }
@@ -292,7 +289,8 @@ footer #copyright {
     margin-top: -40px;
   }
 }
-@media only screen and (min-width: 1042px) {
+/*  LAYOUT ABOVE 1024 PIXELS */
+@media only screen and (min-width: 1024px) {
   header h2 {
     padding: 525px 0 60px 0;
     font-size: 4vw;
@@ -310,15 +308,15 @@ footer #copyright {
     font-size: 3vw;
   }
   main #ordering h3 {
-    margin-left: 250px;
+    margin-left: 200px;
     font-size: 2vw;
   }
   main #ordering li {
-    margin-left: 250px;
+    margin-left: 200px;
     font-size: 3vw;
   }
   main #ordering ul.right {
-    margin-right: 250px;
+    margin-right: 200px;
   }
   main #ordering ul li {
     font-size: 2vw;
@@ -330,6 +328,7 @@ footer #copyright {
     font-size: 2.5vw;
   }
 }
+/*  LAYOUT ABOVE 1200 PIXELS */
 @media only screen and (min-width: 1200px) {
   header {
     background-size: 100%;
@@ -359,15 +358,6 @@ footer #copyright {
   }
   main #ordering h2 {
     font-size: 2.5vw;
-  }
-  main #ordering h3 {
-    margin-left: 350px;
-  }
-  main #ordering li {
-    margin-left: 350px;
-  }
-  main #ordering ul.right {
-    margin-right: 350px;
   }
   footer h3 {
     font-size: 2.25vw;
