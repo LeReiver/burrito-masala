@@ -25,33 +25,15 @@
         <nav>
             <a href="#top"><h1>Burrito Masala</h1></a>
         </nav>
-        <h2>A fresh &amp; exotic take on <br> Portland Street Food</h2>
+        <h2>A Fresh &amp; Exotic Take on <br> Portland Street Food</h2>
     </header>
-    
     <main>
-        <!--Location section-->
-        <section id="location" class="section group">
-            <h1>Find Us Here</h1>
-            <map>
-                <a href="https://www.google.com/maps/place/313+SW+Alder+St,+Portland,+OR+97204/@45.5190208,-122.675541,17z/data=!3m1!4b1!4m5!3m4!1s0x54950a05c1ee2db9:0xce7ecf88b6d8e74b!8m2!3d45.5190208!4d-122.675541" target="_blank" >
-                    <img  class="col_map span_6_of_12"  src="includes/images/map.png"></a>
-            </map>
-            <p >313 SW Alder, Portland, OR<br>We are open 7 days a week<br>11am-7pm</p>
-        </section>
-        <!--Gallery section-->
-        <section id="gallery">
-            <h1>Our Food</h1>
-            <ul class="section group">
-                <li class="col span_6_of_12"><img src="includes/images/meatBurrito.jpg" alt="Pork Burrito">Pork Verde Burrito</li>
-                <li class="col span_6_of_12"><img src="includes/images/vegBurrito.jpg" alt="Sambar Burrito">Sambar Burrito</li>
-                <li class="col span_6_of_12"><img src="includes/images/riceBowl.jpg" alt="Lamb Curry Bowl">Lamb Curry Bowl</li>
-                <li class="col span_6_of_12"><img src="includes/images/vegBowl.jpg" alt="Chile Relleno Bowl">Chile Relleno Bowl</li>
-                <li class="col span_6_of_12"><img src="includes/images/indianBowl.jpg" alt="Aloo Gobi Masala Bowl">Aloo Gobi Masala Bowl</li>
-                <li class="col span_6_of_12"><img src="includes/images/fifthStreet.jpg" alt="3rd Street Carts">3rd Street Carts</li>
-            </ul>
-        </section>
+            <!--Description section-->
+<!--        <section id="description">-->
+<!--            <h1>Southern Indian and Mexican foods... stuffed in a flour tortilla or in a bowl!</h1>-->
+<!--        </section>-->
         <!--Ordering section-->
-        <section id="ordering">
+        <section id="ordering" >
             <h1>How To Order</h1>
             <h3>1. Choose either Burrito or Bowl <span id="price">$8</span></h3>
             <h3>2. Choose either Meat or Veggie</h3>
@@ -96,46 +78,59 @@
                 <li>Grandma Nena’s Fiery Red Salsa </li>
             </ul>
         </section>
+        <section id="gallery">
+            <div class="section group">
+                <div id="column" class="col span_4_of_12"><img src="includes/images/vegBurrito.jpg" alt="Sambar Burrito"></div>
+                <div id="column" class="col span_4_of_12"><img src="includes/images/riceBowl.jpg" alt="Lamb Curry Bowl"></div>
+                <div id="column" class="col span_4_of_12"><img src="includes/images/fifthStreet.jpg" alt="3rd Street Carts"></div>
+            </div>
+        </section>
+        <!--Location section-->
+        <section id="location" class="section group">
+            <h1>Find Us Here</h1>
+            <map>
+                <a href="https://www.google.com/maps/place/313+SW+Alder+St,+Portland,+OR+97204/@45.5190208,-122.675541,17z/data=!3m1!4b1!4m5!3m4!1s0x54950a05c1ee2db9:0xce7ecf88b6d8e74b!8m2!3d45.5190208!4d-122.675541" target="_blank" >
+                    <img  class="col_map span_6_of_12"  src="includes/images/map.png"></a>
+            </map>
+            <p >313 SW Alder, Portland, OR<br>We are open 7 days a week<br>11am-7pm</p>
+        </section>
     </main>
     <!-- Footer section-->
     <footer  class="section group">
         <section id="bois">
             <div  class="col span_6_of_12">
-            <h3>Our Story</h3>
+                <h3>Our Story</h3>
             <div  class="col span_12_of_12">
-            <h4>Prasad</h4>
-                <p>
-                    Champollion cosmos preserve and cherish that pale blue dot tesseract, another world?
+                <h4>Prasad</h4>
+                <p>Champollion cosmos preserve and cherish that pale blue dot tesseract, another world?
                     Great turbulent clouds the ash of stellar alchemy cosmic ocean? Finite but unbounded
                     ship of the imagination gathered by gravity and billions upon billions upon billions
                     upon billions upon billions.
                 </p>
             </div>
             <div  class="col span_12_of_12">
-            <h4>Ramona</h4>
-                <p>
-                    Hypatia realm of the galaxies a very small stage in a vast
+                <h4>Ramona</h4>
+                <p>Hypatia realm of the galaxies a very small stage in a vast
                     cosmic arena! Birth! Cosmos a mote of dust suspended in a sunbeam, cosmos. Light
                     years rich in heavy atoms, paroxysm of global death rich in mystery courage of our
                     questions decipherment, the only home we've ever known shores of the cosmic ocean!
                 </p>
             </div>
         </section>
-        <section id="social">
+        <section id="social" class="col span_6_of_12">
+            <div  >
+                <h3>Be Social</h3>
+            </div>
             <div  class="col span_3_of_12">
-                <h3>Follow Us</h3>
                 <a href="https://twitter.com/?lang=en" target="_blank"><img src="includes/images/twitter_wht.png"></a>
             </div>
             <div  class="col span_3_of_12">
-                <h3>Like Us</h3>
                 <a href="https://www.facebook.com/" target="_blank"><img src="includes/images/facebook_wht.png"></a>
             </div>
             <div  class="col span_3_of_12">
-                <h3>Yelp Us</h3>
                 <a href="https://yelp.com/?lang=en" target="_blank"><img src="includes/images/yelp_wht.png"></a>
             </div>
             <div  class="col span_3_of_12">
-                <h3>Pin Us</h3>
                 <a href="https://www.pinterest.com/" target="_blank"><img src="includes/images/pinterest_wht.png"></a>
             </div>
         </section>

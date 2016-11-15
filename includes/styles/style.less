@@ -35,6 +35,8 @@ nav {
     width: 100%;
     border-top: #CF0021 solid 4px;
     border-bottom: #4DAF18 solid 4px;
+    background-color: rgb(138, 194, 241);
+
     z-index: 3;
     #top {
         margin-top: -50px;
@@ -49,11 +51,13 @@ header {
         margin: 0 auto 30px auto;
         padding: 150px 0 60px 0;
         font-size: 6vw;
-        font-weight: 500;
-        color: rgba(225,225,225,.9);
+        font-weight: 700;
+        color: rgba(255,255,255,1);
+        text-shadow: #000 .25px .5px;
+        font-family: 'Abel', sans-serif;
     }
     background-image: linear-gradient(rgba(100, 100, 100, 0.35),rgba(0, 0, 0, 0.35)),
-        url("../images/hero_mobile.jpg");
+        url("../images/hero.jpg");
     margin-top: 50px;
     padding: 0;
     width: 100%;
@@ -83,66 +87,32 @@ main {
             color:#036128;
         }
     }
-    #location {
-        background-color: rgba(77, 175, 24, 0.32);
-        text-align: center;
-        width: 100%;
-        margin: 0 auto;
-        padding: 0 0 20px 0;
-        border-top: #036128 solid 4px;
-        border-bottom: #036128 solid 4px;
-        p {
-            color: #EE6111;
-            font-family: 'Scada', sans-serif;
-            font-size: 1.25em;
-            font-weight: 500;
-            margin-top: 10px;
-        }
-    }
-    map {
-        display: block;
-        margin: 30px 0 20px 0;
-    }
-    #gallery {
-        padding: 0 0 20px 0;
-        ul {
-            li {
-                background-color: #EE6111;
-                display: inline-block;
-                margin: 0;
-                padding-bottom: 10px;
-                border-top: #CF0021  solid 2px;
-                font-size: 1.25em;
-                img {
-                    border-bottom: #4DAF18  solid 2px;
-                }
-            }
-        text-align: center; 
-        }
+    #description {
         h1 {
             font-size: 1.75em;
             font-family: 'Abel', sans-serif;
-            color: #CF0021 ;
+            color: #EE6111 ;
             font-weight: 600;
             padding: 20px 0;
+            margin-bottom: 20px;
             text-align: center;
         }
     }
     #ordering {
-        background-color: rgba(138, 194, 241, 0.45);
+        //background-color: rgba(138, 194, 241, 0.45);
         padding:  0 0 20px 0;
-        margin-top: -20px;
+        //margin-top: -20px;
         border-top: #CF0021 solid 4px;
         h1 {
-        text-align: center;
+            text-align: center;
         }
         h2 {
-        text-align: center;
-        font-size: 1.75em;
-        font-family: 'Abel', sans-serif;
-        color: #CF0021 ;
-        font-weight: 600;
-        padding: 10px 0;
+            text-align: center;
+            font-size: 1.75em;
+            font-family: 'Abel', sans-serif;
+            color: #CF0021 ;
+            font-weight: 600;
+            padding: 10px 0;
         }
         h3 {
             text-align: start;
@@ -170,13 +140,57 @@ main {
         ul.right {
             float: right;
             padding-right: 4em;
-         }
+        }
         ul.bottom {
             clear: both;
         }
         #price {
             color: #036128;
         }
+    }
+    #gallery {
+        padding: 0;
+        text-align: center;
+        #column {
+            //background-color: #EE6111;
+            display: inline-block;
+            margin: 0;
+            //padding-bottom: 10px;
+            border-top: #CF0021  solid 2px;
+            font-size: 1.25em;
+            img {
+                border-bottom: #4DAF18  solid 2px;
+                display: block;
+            }
+        }
+        h1 {
+            font-size: 1.75em;
+            font-family: 'Abel', sans-serif;
+            color: #CF0021 ;
+            font-weight: 600;
+            padding: 20px 0;
+            text-align: center;
+        }
+    }
+    #location {
+        //background-color: rgba(77, 175, 24, 0.32);
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 0 20px 0;
+        border-top: #036128 solid 4px;
+        border-bottom: #CF0021 solid 4px;
+        p {
+            color: #EE6111 ;
+            font-family: 'Scada', sans-serif;
+            font-size: 1.25em;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+    }
+    map {
+        display: block;
+        margin: 30px 0 20px 0;
     }
 }
 
@@ -190,7 +204,7 @@ footer {
         text-align: center;
         font-size: 1.5em;
         font-family: 'Abel', sans-serif;
-        color: #EE6111 ;
+        color: #FFF ;
         font-weight: 600;
         line-height: 80%;
     }
@@ -199,20 +213,21 @@ footer {
          padding: 10px 0 0 20px;
          font-size: 1.25em;
          font-family: 'Abel', sans-serif;
-         color: #EE6111 ;
+         color: #FFF ;
          font-weight: 600;
          line-height: 80%;
      }
     a {
-        color: #EE6111 ;
+        color: #FFF ;
         text-decoration: none;
     }
     a:hover {
-        color: #FFF;
+        color: #EE6111;
     }
     P {
         margin: 20px 20px;
         font-size: 1.125em;
+        color: #FFF;
     }
     img {
         width: 45px;
@@ -231,6 +246,7 @@ footer {
         }
     }
     #social {
+        display: inline-block;
         text-align: center;
         h3 {
             text-align: center;
@@ -248,6 +264,24 @@ footer {
 }
 
 
+/*  LAYOUT ABOVE 465 PIXELS */
+@media only screen and (min-width: 465px) {
+    header {
+        h2 {
+            padding: 200px 0 60px 0;
+        }
+    }
+}
+
+/*  LAYOUT ABOVE 600 PIXELS */
+@media only screen and (min-width: 600px) {
+    header {
+            h2 {
+                padding: 250px 0 60px 0;
+        }
+    }
+}
+
 /*  LAYOUT ABOVE 769 PIXELS */
 @media only screen and (min-width: 769px) {
 
@@ -256,6 +290,7 @@ footer {
             padding: 325px 0 60px 0;
             font-size: 5vw;
         }
+        height: 80%;
     }
     main {
         #location p {
@@ -287,7 +322,9 @@ footer {
             }
             img {
                 padding-top: 10px;
-                width: 60px;
+                margin: 10px 5px 100px 5px;
+                width: 40px;
+                display: inline-block;
             }
         }
         #phone {
@@ -295,10 +332,12 @@ footer {
         }
         #phone_desktop {
             text-align: center;
-            //margin: 30px -200px 0 400px;
+            margin: 30px 10px 100px 10px;
+
             h3 {
-            font-size: 150%;
+                font-size: 150%;
                 text-align: center;
+                margin-right: 15px;
         }
             p {
                 font-size: 150%;
@@ -314,9 +353,9 @@ footer {
 @media only screen and (min-width: 1024px) {
     header {
         h2 {
-            padding: 525px 0 60px 0;
             font-size: 4vw;
         }
+        height: 90%;
     }
     main {
         h1 {
@@ -352,6 +391,12 @@ footer {
     }
 
     footer {
+        img {
+            padding-top: 10px;
+            margin: 10px 5px 100px 5px;
+            width: 40px;
+            display: inline-block;
+        }
         h3 {
             font-size: 2.5vw;
         }
@@ -365,11 +410,9 @@ footer {
 @media only screen and (min-width: 1200px) {
     header {
         h2 {
-            padding: 325px 0 30px 0;
-            font-size: 3vw;
+            font-size: 4vw;
         }
-        background-size: 100%;
-        height: 100%;
+        height: 600px;
     }
     main {
         h1 {
