@@ -21,21 +21,24 @@ nav {
   width: 100%;
   border-top: #CF0021 solid 4px;
   border-bottom: #4DAF18 solid 4px;
-  background-color: #8ac2f1;
   z-index: 3;
 }
 nav a h1 {
   text-align: center;
-  margin: 0 ;
-  font-weight: 900;
-  font-size: 3em;
+  margin: 0;
+  font-size: 4em;
   font-family: 'Abel', sans-serif;
-  color: #EE6111;
   padding: 5px 0;
   text-decoration: none;
 }
-nav a h1:hover {
+nav a h1 #burrito {
+  font-weight: 900;
   color: #036128;
+}
+nav a h1 #masala {
+  font-weight: 200;
+  color: #EE6111;
+  text-shadow: .25px 3px black;
 }
 nav #top {
   margin-top: -50px;
@@ -43,7 +46,7 @@ nav #top {
   font-size: .5em;
 }
 header {
-  background-image: linear-gradient(rgba(100, 100, 100, 0.35), rgba(0, 0, 0, 0.35)), url("../images/hero.jpg");
+  background-image: linear-gradient(rgba(10, 10, 10, 0.001), rgba(0, 0, 0, 0.8)), url("../images/hero.jpg");
   margin-top: 50px;
   padding: 0;
   width: 100%;
@@ -62,7 +65,7 @@ header h2 {
   padding: 150px 0 60px 0;
   font-size: 6vw;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   text-shadow: #000 .25px .5px;
   font-family: 'Abel', sans-serif;
 }
@@ -93,6 +96,7 @@ main #description h1 {
 main #ordering {
   padding: 0 0 20px 0;
   border-top: #CF0021 solid 4px;
+  border-bottom: #CF0021  solid 4px;
 }
 main #ordering h1 {
   text-align: center;
@@ -110,9 +114,12 @@ main #ordering h3 {
   padding: 10px 0 0 5px;
   font-size: 1.25em;
   font-family: 'Abel', sans-serif;
-  color: #EE6111 ;
+  color: #000 ;
   font-weight: 600;
   line-height: 80%;
+}
+main #ordering h3 #steps {
+  color: #EE6111;
 }
 main #ordering ul {
   padding-left: 0;
@@ -120,7 +127,7 @@ main #ordering ul {
 main #ordering ul li {
   font-size: 1.2em;
   font-family: 'Abel', sans-serif;
-  color: #EE6111 ;
+  color: #000 ;
   font-weight: 600;
   line-height: 120%;
   padding-left: 10px;
@@ -145,11 +152,9 @@ main #gallery {
 main #gallery #column {
   display: inline-block;
   margin: 0;
-  border-top: #CF0021  solid 2px;
   font-size: 1.25em;
 }
 main #gallery #column img {
-  border-bottom: #4DAF18  solid 2px;
   display: block;
 }
 main #gallery h1 {
@@ -164,26 +169,29 @@ main #location {
   text-align: center;
   width: 100%;
   margin: 0 auto;
-  padding: 0 0 20px 0;
+  padding: 0;
   border-top: #036128 solid 4px;
   border-bottom: #CF0021 solid 4px;
+  display: block;
 }
 main #location p {
-  color: #EE6111 ;
+  color: #000 ;
   font-family: 'Scada', sans-serif;
   font-size: 1.25em;
   font-weight: 500;
   margin-top: 10px;
 }
-main map {
+main #location img {
   display: block;
+}
+main map {
   margin: 30px 0 20px 0;
 }
 footer {
   background-color: #036128;
   color: #FFF;
   font-family: 'Scada', sans-serif;
-  padding: 10px 0;
+  padding: 0;
 }
 footer h3 {
   margin: 20px 0;
@@ -210,13 +218,13 @@ footer a {
 footer a:hover {
   color: #EE6111;
 }
-footer P {
-  margin: 20px 20px;
+footer p {
   font-size: 1.125em;
   color: #FFF;
+  margin: .5em 1em 0 1em;
 }
 footer img {
-  width: 45px;
+  width: 42px;
 }
 footer #bios {
   padding: 10px 0;
@@ -232,19 +240,26 @@ footer #bios h4 {
   line-height: 80%;
 }
 footer #social {
-  display: inline-block;
   text-align: center;
+  margin-bottom: 2em;
 }
 footer #social h3 {
   text-align: center;
 }
+footer #social a {
+  margin: 0 .75em 2em .75em;
+}
 footer #phone {
   text-align: center;
 }
-footer #copyright {
+footer #copyright h3 {
+  font-size: 1.75em;
+}
+footer #copyright p {
   text-align: center;
-  color: #EE6111;
-  padding-top: 40px;
+  color: #FFF;
+  margin-top: 1em;
+  padding-bottom: 1em;
 }
 /*  LAYOUT ABOVE 465 PIXELS */
 @media only screen and (min-width: 465px) {
@@ -271,6 +286,9 @@ footer #copyright {
     padding-top: 10%;
     font-size: 2.5vw;
   }
+  main #ordering h3 {
+    margin-left: 200px;
+  }
   main #ordering ul.li {
     margin-left: 150px;
   }
@@ -279,9 +297,9 @@ footer #copyright {
   }
   footer p {
     font-size: 130%;
+    margin: .5em 1em 0 1em;
   }
   footer #social {
-    padding-top: 55px;
     text-align: center;
   }
   footer #social h3 {
@@ -292,28 +310,22 @@ footer #copyright {
     padding-top: 40px;
   }
   footer #social img {
-    padding-top: 10px;
-    margin: 10px 5px 100px 5px;
+    margin: 5px 5px 10px 5px;
     width: 40px;
-    display: inline-block;
   }
   footer #phone {
     display: none;
   }
   footer #phone_desktop {
     text-align: center;
-    margin: 30px 10px 100px 10px;
   }
   footer #phone_desktop h3 {
-    font-size: 150%;
     text-align: center;
     margin-right: 15px;
   }
   footer #phone_desktop p {
-    font-size: 150%;
-  }
-  footer #copyright {
-    margin-top: -40px;
+    font-size: 3vw;
+    margin-top: 25px;
   }
 }
 /*  LAYOUT ABOVE 1024 PIXELS */
@@ -332,6 +344,9 @@ footer #copyright {
   }
   main #location h1 {
     font-size: 3vw;
+  }
+  main #location img {
+    width: 90%;
   }
   main #ordering h2 {
     font-size: 3vw;
@@ -360,6 +375,16 @@ footer #copyright {
     font-size: 2.5vw;
   }
   footer h4 {
+    font-size: 2.5vw;
+  }
+  footer #phone_desktop {
+    text-align: center;
+  }
+  footer #phone_desktop h3 {
+    text-align: center;
+    margin-right: 15px;
+  }
+  footer #phone_desktop p {
     font-size: 2.5vw;
   }
 }
