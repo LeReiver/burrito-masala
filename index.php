@@ -28,12 +28,16 @@
         <h2>A Fresh &amp; Exotic Take on <br> Portland Street Food</h2>
     </header>
     <main>
-        <section id="ordering">
+        <section id="ordering" class="section group">
             <h1>How To Order</h1>
-            <h3><span id="steps">1.</span> Choose either Burrito or Bowl <span id="price">$8</span></h3>
-            <h3><span id="steps">2.</span> Choose choice of Meat or Veggie</h3>
-            <h3><span id="steps">3.</span> Choose type of Rice</h3>
-            <h3><span id="steps">4.</span> Choose your Toppings</h3>
+            <div  class="col span_6_of_12">
+                <h3><span id="steps">1.</span> Choose either Burrito or Bowl <span id="price">$8</span></h3>
+                <h3><span id="steps">2.</span> Choose choice of Meat or Veggie</h3>
+            </div>
+            <div  class="col span_6_of_12" id="steps" style="margin-top: -4px;">
+                <h3><span id="steps">3.</span> Choose type of Rice</h3>
+                <h3><span id="steps">4.</span> Choose your Toppings</h3>
+            </div>
             <div class="section group">
                 <div  class="col span_6_of_12">
                     <h2>Meats</h2>
@@ -99,7 +103,7 @@
                 <p >313 SW Alder, Portland, OR<br>We are open 7 days a week<br>11am-7pm</p>
                 </div>
             <div  class="col span_6_of_12">
-                <img src="includes/images/fifthStreet.jpg" alt="3rd Street Carts">
+                <img src="includes/images/5thStCarts2.jpg" alt="3rd Street Carts">
             </div>
         </section>
     </main>

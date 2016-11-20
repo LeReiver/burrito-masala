@@ -26,7 +26,7 @@ nav {
 nav a h1 {
   text-align: center;
   margin: 0;
-  font-size: 4em;
+  font-size: 2.75em;
   font-family: 'Abel', sans-serif;
   padding: 5px 0;
   text-decoration: none;
@@ -38,7 +38,7 @@ nav a h1 #burrito {
 nav a h1 #masala {
   font-weight: 200;
   color: #EE6111;
-  text-shadow: .25px 3px black;
+  text-shadow: .25px 2px black;
 }
 nav #top {
   margin-top: -50px;
@@ -47,7 +47,7 @@ nav #top {
 }
 header {
   background-image: linear-gradient(rgba(10, 10, 10, 0.001), rgba(0, 0, 0, 0.8)), url("../images/hero.jpg");
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 0;
   width: 100%;
   height: 60vw;
@@ -62,7 +62,7 @@ header {
 header h2 {
   text-align: center;
   margin: 0 auto 30px auto;
-  padding: 150px 0 60px 0;
+  padding: 120px 0 60px 0;
   font-size: 6vw;
   font-weight: 700;
   color: #fff;
@@ -96,7 +96,7 @@ main #description h1 {
 main #ordering {
   padding: 0 0 20px 0;
   border-top: #CF0021 solid 4px;
-  border-bottom: #CF0021  solid 4px;
+  border-bottom: #4DAF18  solid 4px;
 }
 main #ordering h1 {
   text-align: center;
@@ -148,6 +148,8 @@ main #ordering #price {
 main #gallery {
   padding: 0;
   text-align: center;
+  border-top: #CF0021 solid 4px;
+  border-bottom: #4DAF18  solid 4px;
 }
 main #gallery #column {
   display: inline-block;
@@ -170,22 +172,24 @@ main #location {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  border-top: #036128 solid 4px;
-  border-bottom: #CF0021 solid 4px;
+  border-top: #CF0021 solid 4px;
+  border-bottom: #4DAF18  solid 4px;
   display: block;
 }
 main #location p {
   color: #000 ;
   font-family: 'Scada', sans-serif;
-  font-size: 1.25em;
+  font-size: 20px;
   font-weight: 500;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 main #location img {
   display: block;
+  width: 100%;
 }
 main map {
-  margin: 30px 0 20px 0;
+  margin: 30px 0 0 0;
+  display: block;
 }
 footer {
   background-color: #036128;
@@ -211,13 +215,6 @@ footer h4 {
   font-weight: 600;
   line-height: 80%;
 }
-footer a {
-  color: #FFF ;
-  text-decoration: none;
-}
-footer a:hover {
-  color: #EE6111;
-}
 footer p {
   font-size: 1.125em;
   color: #FFF;
@@ -239,6 +236,10 @@ footer #bios h4 {
   font-weight: 600;
   line-height: 80%;
 }
+footer #phone {
+  text-align: center;
+  margin: 20px 0;
+}
 footer #social {
   text-align: center;
   margin-bottom: 2em;
@@ -249,9 +250,6 @@ footer #social h3 {
 footer #social a {
   margin: 0 .75em 2em .75em;
 }
-footer #phone {
-  text-align: center;
-}
 footer #copyright h3 {
   font-size: 1.75em;
 }
@@ -261,10 +259,43 @@ footer #copyright p {
   margin-top: 1em;
   padding-bottom: 1em;
 }
+/*  LAYOUT BELOW 280 PIXELS */
+@media only screen and (max-width: 280px) {
+  body {
+    min-width: 270px;
+  }
+  header h2 {
+    padding: 120px 0 60px 0;
+  }
+  nav a h1 {
+    font-size: 3.25em;
+  }
+}
+/*  LAYOUT ABOVE 300 PIXELS */
+@media only screen and (min-width: 300px) {
+  header h2 {
+    padding: 130px 0 60px 0;
+  }
+  nav a h1 {
+    font-size: 3.25em;
+  }
+}
+/*  LAYOUT ABOVE 380 PIXELS */
+@media only screen and (min-width: 380px) {
+  header h2 {
+    padding: 150px 0 60px 0;
+  }
+  nav a h1 {
+    font-size: 3.25em;
+  }
+}
 /*  LAYOUT ABOVE 465 PIXELS */
 @media only screen and (min-width: 465px) {
   header h2 {
     padding: 200px 0 60px 0;
+  }
+  nav a h1 {
+    font-size: 3.25em;
   }
 }
 /*  LAYOUT ABOVE 600 PIXELS */
@@ -276,24 +307,35 @@ footer #copyright p {
 /*  LAYOUT ABOVE 769 PIXELS */
 @media only screen and (min-width: 769px) {
   header {
-    height: 80%;
+    height: 550px;
   }
   header h2 {
-    padding: 325px 0 60px 0;
+    padding: 425px 0 60px 0;
     font-size: 5vw;
   }
   main #location p {
-    padding-top: 10%;
-    font-size: 2.5vw;
+    padding-top: 1%;
+    font-size: 20px;
+  }
+  main #location img {
+    margin: 30px 0 0 0;
+  }
+  main #ordering #steps {
+    margin-top: 9px !important;
   }
   main #ordering h3 {
-    margin-left: 200px;
+    margin-left: 40px;
+    font-size: 130%;
+    font-stretch: extra-expanded;
   }
-  main #ordering ul.li {
-    margin-left: 150px;
+  main #ordering ul li {
+    margin-left: 40px;
+  }
+  main #ordering ul.left {
+    margin-left: 0;
   }
   main #ordering ul.right {
-    margin-right: 150px;
+    margin-right: 20px;
   }
   footer p {
     font-size: 130%;
@@ -330,11 +372,14 @@ footer #copyright p {
 }
 /*  LAYOUT ABOVE 1024 PIXELS */
 @media only screen and (min-width: 1024px) {
+  nav a h1 {
+    font-size: 6vw;
+  }
   header {
-    height: 90%;
+    height: 600px;
   }
   header h2 {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
   main h1 {
     font-size: 3vw;
@@ -345,22 +390,19 @@ footer #copyright p {
   main #location h1 {
     font-size: 3vw;
   }
-  main #location img {
-    width: 90%;
-  }
   main #ordering h2 {
     font-size: 3vw;
   }
   main #ordering h3 {
-    margin-left: 200px;
+    margin-left: 100px;
     font-size: 2vw;
   }
-  main #ordering li {
-    margin-left: 200px;
-    font-size: 3vw;
+  main #ordering ul li {
+    margin-left: 80px;
   }
   main #ordering ul.right {
-    margin-right: 200px;
+    margin-right: 60px;
+    padding-right: 0;
   }
   main #ordering ul li {
     font-size: 2vw;
@@ -391,10 +433,17 @@ footer #copyright p {
 /*  LAYOUT ABOVE 1200 PIXELS */
 @media only screen and (min-width: 1200px) {
   header {
-    height: 600px;
+    height: 750px;
   }
   header h2 {
-    font-size: 4vw;
+    font-size: 50px;
+    padding: 550px 0 60px 0;
+  }
+  header img {
+    height: 500px;
+  }
+  nav a h1 {
+    font-size: 5vw;
   }
   main h1 {
     font-size: 2.5vw;
@@ -407,20 +456,18 @@ footer #copyright p {
   }
   main #location map {
     display: block;
-    margin: 30px 0 20px 0;
-    padding-left: 60px;
-    width: 90%;
+    margin: 30px 0 0 0;
   }
   main #location p {
-    font-size: 2vw;
+    font-size: 20px;
   }
   main #ordering h2 {
     font-size: 2.5vw;
   }
   footer h3 {
-    font-size: 2.25vw;
+    font-size: 2vw;
   }
   footer h4 {
-    font-size: 2.25vw;
+    font-size: 2vw;
   }
 }

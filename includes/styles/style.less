@@ -12,23 +12,6 @@ body {
 }
 
 nav {
-    a h1 {
-        text-align: center;
-        margin: 0;
-        font-size: 4em;
-        font-family: 'Abel', sans-serif;
-        padding: 5px 0;
-        text-decoration: none;
-        #burrito {
-            font-weight: 900;
-            color: #036128;
-        }
-        #masala {
-            font-weight: 200;
-            color: #EE6111;
-            text-shadow: .25px 3px black;
-        }
-    }
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -40,6 +23,23 @@ nav {
     border-top: #CF0021 solid 4px;
     border-bottom: #4DAF18 solid 4px;
     z-index: 3;
+    a h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 2.75em;
+        font-family: 'Abel', sans-serif;
+        padding: 5px 0;
+        text-decoration: none;
+        #burrito {
+            font-weight: 900;
+            color: #036128;
+        }
+        #masala {
+            font-weight: 200;
+            color: #EE6111;
+            text-shadow: .25px 2px black;
+        }
+    }
     #top {
         margin-top: -50px;
         line-height: 10%;
@@ -51,7 +51,7 @@ header {
     h2 {
         text-align: center;
         margin: 0 auto 30px auto;
-        padding: 150px 0 60px 0;
+        padding: 120px 0 60px 0;
         font-size: 6vw;
         font-weight: 700;
         color: #fff;
@@ -60,7 +60,7 @@ header {
     }
     background-image: linear-gradient(rgba(10, 10, 10, .001),rgba(0, 0, 0, 0.80)),
         url("../images/hero.jpg");
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 0;
     width: 100%;
     height: 60vw;
@@ -103,7 +103,7 @@ main {
     #ordering {
         padding:  0 0 20px 0;
         border-top: #CF0021 solid 4px;
-        border-bottom: #CF0021  solid 4px;
+        border-bottom: #4DAF18  solid 4px;
 
         h1 {
             text-align: center;
@@ -156,13 +156,11 @@ main {
     #gallery {
         padding: 0;
         text-align: center;
-        //border-top: #036128 solid 4px;
+        border-top: #CF0021 solid 4px;
+        border-bottom: #4DAF18  solid 4px;
         #column {
-            //background-color: #EE6111;
             display: inline-block;
             margin: 0;
-            //padding-bottom: 10px;
-            //border-top: #CF0021  solid 2px;
             font-size: 1.25em;
             img {
                 display: block;
@@ -182,22 +180,24 @@ main {
         width: 100%;
         margin: 0 auto;
         padding: 0;
-        border-top: #036128 solid 4px;
-        border-bottom: #CF0021 solid 4px;
+        border-top: #CF0021 solid 4px;
+        border-bottom: #4DAF18  solid 4px;
         display: block;
         p {
             color: #000 ;
             font-family: 'Scada', sans-serif;
-            font-size: 1.25em;
+            font-size: 20px;
             font-weight: 500;
-            margin-top: 10px;
+            margin-top: 5px;
         }
         img {
             display: block;
+            width: 100%;
         }
     }
     map {
-        margin: 30px 0 20px 0;
+        margin: 30px 0 0 0;
+        display: block;
     }
 }
 
@@ -224,13 +224,6 @@ footer {
          font-weight: 600;
          line-height: 80%;
      }
-    a {
-        color: #FFF ;
-        text-decoration: none;
-    }
-    a:hover {
-        color: #EE6111;
-    }
     p {
         font-size: 1.125em;
         color: #FFF;
@@ -252,6 +245,10 @@ footer {
             line-height: 80%;
         }
     }
+    #phone {
+        text-align: center;
+        margin: 20px 0;
+    }
     #social {
         text-align: center;
         margin-bottom: 2em;
@@ -261,9 +258,6 @@ footer {
         a {
             margin: 0 .75em 2em .75em;
         }
-    }
-    #phone {
-        text-align: center;
     }
     #copyright {
         h3{
@@ -278,12 +272,61 @@ footer {
     }
 }
 
+/*  LAYOUT BELOW 280 PIXELS */
+@media only screen and (max-width: 280px) {
+    body {
+        min-width: 270px;
+    }
+    header {
+        h2 {
+            padding: 120px 0 60px 0;
+        }
+    }
+    nav {
+        a h1 {
+            font-size: 3.25em;
+        }
+    }
+}
 
+/*  LAYOUT ABOVE 300 PIXELS */
+@media only screen and (min-width: 300px) {
+    header {
+        h2 {
+            padding: 130px 0 60px 0;
+        }
+    }
+    nav {
+        a h1 {
+            font-size: 3.25em;
+        }
+    }
+}
+
+
+/*  LAYOUT ABOVE 380 PIXELS */
+@media only screen and (min-width: 380px) {
+    header {
+        h2 {
+            padding: 150px 0 60px 0;
+        }
+    }
+    nav {
+        a h1 {
+            font-size: 3.25em;
+        }
+    }
+}
 /*  LAYOUT ABOVE 465 PIXELS */
 @media only screen and (min-width: 465px) {
     header {
         h2 {
             padding: 200px 0 60px 0;
+        }
+    }
+    nav {
+        a h1 {
+            font-size: 3.25em;
         }
     }
 }
@@ -302,25 +345,41 @@ footer {
 
     header {
         h2 {
-            padding: 325px 0 60px 0;
+            padding: 425px 0 60px 0;
             font-size: 5vw;
         }
-        height: 80%;
+        height: 550px;
     }
     main {
-        #location p {
-            padding-top: 10%;
-            font-size: 2.5vw;
+        #location {
+            p {
+                padding-top: 1%;
+                font-size: 20px;
+            }
+            img {
+                margin: 30px 0 0 0;
+            }
         }
         #ordering {
+            #steps {
+                margin-top: 9px !important;
+            }
             h3 {
-                margin-left: 200px;
+                margin-left: 40px;
+                font-size: 130%;
+                font-stretch: extra-expanded;
+
             }
-            ul.li {
-                margin-left: 150px;
+            ul {
+                li {
+                    margin-left: 40px;
+                }
             }
-            ul.right {
-                margin-right: 150px;
+            ul.left {
+                   margin-left: 0;
+               }
+            ul.right{
+                margin-right: 20px;
             }
         }
     }
@@ -363,11 +422,17 @@ footer {
 
 /*  LAYOUT ABOVE 1024 PIXELS */
 @media only screen and (min-width: 1024px) {
+
+    nav {
+        a h1 {
+            font-size: 6vw;
+        }
+    }
     header {
         h2 {
-            font-size: 4vw;
+            font-size: 4.5vw;
         }
-        height: 90%;
+        height: 600px;
     }
     main {
         h1 {
@@ -381,7 +446,7 @@ footer {
                 font-size: 3vw;
             }
             img {
-                width: 90%;
+                //width: 90%;
             }
 
         }
@@ -390,15 +455,17 @@ footer {
                 font-size: 3vw;
             }
             h3 {
-                margin-left: 200px;
+                margin-left: 100px;
                 font-size: 2vw;
             }
-            li {
-                margin-left: 200px;
-                font-size: 3vw;
+            ul {
+                li {
+                    margin-left: 80px;
+                }
             }
             ul.right {
-                margin-right: 200px;
+                margin-right: 60px;
+                padding-right: 0;
             }
             ul {
                 li {
@@ -437,11 +504,21 @@ footer {
 /*  LAYOUT ABOVE 1200 PIXELS */
 @media only screen and (min-width: 1200px) {
     header {
+        height: 750px;
         h2 {
-            font-size: 4vw;
+            font-size: 50px;
+            padding: 550px 0 60px 0;
         }
-        height: 600px;
+        img {
+            height: 500px;
+        }
     }
+    nav {
+        a h1 {
+            font-size: 5vw;
+        }
+    }
+
     main {
         h1 {
             font-size: 2.5vw;
@@ -455,12 +532,12 @@ footer {
             }
             map {
                 display: block;
-                margin: 30px 0 20px 0;
-                padding-left: 60px;
-                width: 90%;
+                margin: 30px 0 0 0;
+                //padding-left: 60px;
+                //width: 90%;
             }
             p {
-                font-size: 2vw;
+                font-size: 20px;
             }
         }
         #ordering {
@@ -471,10 +548,10 @@ footer {
     }
     footer {
         h3 {
-            font-size: 2.25vw;
+            font-size: 2vw;
         }
         h4 {
-            font-size: 2.25vw;
+            font-size: 2vw;
         }
     }
 }
