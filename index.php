@@ -1,39 +1,38 @@
-<?php
-/**
- * Programmer: Michael Le-Reiver
- * Date: 11/1/16
- * Time: 11:43 AM
- * File: index.php 
- * Description: A website for a fictitious fusion food cart in Portland, OR. Designed and developed using PHP and LESS.
- *
- * - Images:
+<?php ?>
+<!DOCTYPE html>
+<!--
+* Programmer: Michael Le-Reiver
+* Date: 11/1/16
+* Time: 11:43 AM
+* File: index.php
+* Description: A website for a fictitious fusion food cart in Portland, OR. Designed and developed using PHP and LESS.
+
+*  NOTES FOR FUTURE MODIFICATIONS
+
+ * Images:
  *      - All images are place holders and need to be updated.
  *      - Hero(main) image optimum size is 1200px width and 700px height
  *      - Food images optimum size is 1024px width and 680px height
  *      - Location images optimum size is 700px width and 500px height
  *
- * - Responsive Grid System:
+ * Responsive Grid System:
  *      - This website uses Responsive Grid System for responsive columns for varying device size: http://www.responsivegridsystem.com/
  *
- * - Updating Menu Items:
+ * Updating Menu Items:
  *      - Menu items can be updated in the Ordering section. The reside in list tags. Type new menu items in between the <li> and </li> tags.
  *
- * - Color Palette:
+ * Color Palette:
  *      Link to color palette https://color.adobe.com/cloud/aHR0cHM6Ly9jYy1hcGktYXNzZXRzLmFkb2JlLmlv/library/166e5450-0e50-11e5-a420-5fad9b827e82/theme/9a6561c3-3137-482b-9f59-99505d6df4f0/
  *      - Red (#CF0021) is used for Ordering section headers and bordering sections.
  *      - Light blue (#8AC2F1)  is used for bordering sections.
  *      - Dark green (#036128) is used for the logo and footer
  *      - Bright green (#4DAF18) is used for bordering sections.
  *      - Orange (#EE6111) is used for the logo.
-
- */
-?>
-
-<!DOCTYPE html>
+-->
 <html lang="en">
 <head>
     <!--Includes head files file-->
-    <?php require_once('includes/head_files.php'); ?>
+    <?php require_once('includes/scripts/head_files.php'); ?>
     <title>Burrito Masala</title>
 </head>
 
@@ -143,6 +142,6 @@
 <!-- Requires footer file  -->
     <?php require ('footer.php');?>
 <!-- Requires smooth scrolling script for anchor tags   -->
-<?php require('includes/smooth_scroll.php');?>
+<?php require('includes/scripts/smooth_scroll.php');?>
 </body>
 </html>
