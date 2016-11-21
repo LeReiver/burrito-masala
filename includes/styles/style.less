@@ -1,3 +1,12 @@
+/**
+ * Programmer: Michael Le-Reiver
+ * Date: 11/1/16
+ * Time: 11:43 AM
+ * File: style.less
+ * Description: Nested CSS styles for LESS compiling
+ */
+
+/* Global Styles */
 body {
     color: #EE6111;
     font-family: 'Scada', sans-serif;
@@ -11,6 +20,7 @@ body {
     }
 }
 
+/* Navigation Section - Fixed to top of screen. */
 nav {
     list-style-type: none;
     margin: 0;
@@ -47,6 +57,7 @@ nav {
     }
 }
 
+/* Header Section */
 header {
     h2 {
         text-align: center;
@@ -58,6 +69,10 @@ header {
         text-shadow: #000 .25px .5px;
         font-family: 'Abel', sans-serif;
     }
+    /**  Gradient overlay on hero image.
+    * Hero Image Place holder.
+    * - Replace url of new image in tag below
+    */
     background-image: linear-gradient(rgba(10, 10, 10, .001),rgba(0, 0, 0, 0.80)),
         url("../images/hero.jpg");
     margin-top: 30px;
@@ -73,6 +88,7 @@ header {
     position: relative;
 }
 
+/* Main Section */
 main {
     z-index: 0;
     border-top: #4DAF18 solid 4px;
@@ -89,22 +105,11 @@ main {
             color:#036128;
         }
     }
-    #description {
-        h1 {
-            font-size: 1.75em;
-            font-family: 'Abel', sans-serif;
-            color: #EE6111 ;
-            font-weight: 600;
-            padding: 20px 0;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-    }
+    /* Ordering Section */
     #ordering {
         padding:  0 0 20px 0;
-        border-top: #CF0021 solid 4px;
-        border-bottom: #4DAF18  solid 4px;
-
+        border-top: #8AC2F1 solid 4px;
+        border-bottom: #8AC2F1  solid 4px;
         h1 {
             text-align: center;
         }
@@ -139,24 +144,28 @@ main {
                 padding-left: 10px;
             }
         }
+        /* Left column of Toppings */
         ul.left {
             float:left;
         }
+        /* Right column of Toppings */
         ul.right {
             float: right;
             padding-right: 4em;
-        }
+        }/* Bottom column of Toppings - Grandmas salsa */
         ul.bottom {
             clear: both;
         }
+        /* Green color for dollar sign */
         #price {
             color: #036128;
         }
     }
+    /* Gallery Section */
     #gallery {
         padding: 0;
         text-align: center;
-        border-top: #CF0021 solid 4px;
+        border-top: #4DAF18 solid 4px;
         border-bottom: #4DAF18  solid 4px;
         #column {
             display: inline-block;
@@ -175,12 +184,13 @@ main {
             text-align: center;
         }
     }
+    /* Location Section */
     #location {
         text-align: center;
         width: 100%;
         margin: 0 auto;
         padding: 0;
-        border-top: #CF0021 solid 4px;
+        border-top: #8AC2F1 solid 4px;
         border-bottom: #4DAF18  solid 4px;
         display: block;
         z-index: 0;
@@ -191,25 +201,28 @@ main {
             font-weight: 600;
             margin-top: 10px;
         }
+        /* Image of food carts  */
         img {
             display: block;
             width: 100%;
             margin-bottom: -5px;
         }
     }
+    /* Map */
     map {
         margin: 30px 0 0 0;
         display: block;
     }
 }
 
+/* Footer Section */
 footer {
     background-color: #036128;
     color: #FFF;
     font-family: 'Scada', sans-serif;
     padding: 0;
     z-index: 1024;
-    border-top: #CF0021 solid 4px;
+    border-top: #8AC2F1 solid 4px;
 
     h3 {
         margin: 20px 0;
@@ -234,9 +247,11 @@ footer {
         color: #FFF;
         margin: .5em 1em 0 1em;
     }
+    /* Social media icons */
     img {
         width: 42px;
     }
+    /* Chefs bios section */
     #bios {
         padding: 10px 0;
         h4 {
@@ -250,10 +265,14 @@ footer {
             line-height: 80%;
         }
     }
+
+    /* Phone for Mobile */
     #phone {
         text-align: center;
         margin: 20px 0;
     }
+
+    /* Social Media Section */
     #social {
         text-align: center;
         margin-bottom: 2em;
@@ -264,6 +283,7 @@ footer {
             margin: 0 .75em 2em .75em;
         }
     }
+    /* Copyright Section */
     #copyright {
         h3{
             font-size: 1.75em;
@@ -279,14 +299,17 @@ footer {
 
 /*  LAYOUT BELOW 280 PIXELS */
 @media only screen and (max-width: 280px) {
+    /* Global */
     body {
         min-width: 270px;
     }
+    /* Header */
     header {
         h2 {
             padding: 120px 0 60px 0;
         }
     }
+    /* Navigation */
     nav {
         a h1 {
             font-size: 3.25em;
@@ -296,11 +319,13 @@ footer {
 
 /*  LAYOUT ABOVE 300 PIXELS */
 @media only screen and (min-width: 300px) {
+    /* Header */
     header {
         h2 {
             padding: 130px 0 60px 0;
         }
     }
+/* Navigation */
     nav {
         a h1 {
             font-size: 3.25em;
@@ -311,11 +336,13 @@ footer {
 
 /*  LAYOUT ABOVE 380 PIXELS */
 @media only screen and (min-width: 380px) {
+    /* Header */
     header {
         h2 {
             padding: 150px 0 60px 0;
         }
     }
+/* Navigation */
     nav {
         a h1 {
             font-size: 3.25em;
@@ -324,11 +351,13 @@ footer {
 }
 /*  LAYOUT ABOVE 465 PIXELS */
 @media only screen and (min-width: 465px) {
+    /* Header */
     header {
         h2 {
             padding: 200px 0 60px 0;
         }
     }
+    /* Navigation */
     nav {
         a h1 {
             font-size: 3.25em;
@@ -338,6 +367,7 @@ footer {
 
 /*  LAYOUT ABOVE 600 PIXELS */
 @media only screen and (min-width: 600px) {
+    /* Header */
     header {
             h2 {
                 padding: 250px 0 60px 0;
@@ -348,6 +378,7 @@ footer {
 /*  LAYOUT ABOVE 769 PIXELS */
 @media only screen and (min-width: 769px) {
 
+    /* Header */
     header {
         h2 {
             padding: 425px 0 60px 0;
@@ -356,6 +387,7 @@ footer {
         height: 550px;
     }
     main {
+        /* Location Section */
         #location {
             p {
                 font-size: 20px;
@@ -380,9 +412,11 @@ footer {
                     margin-left: 40px;
                 }
             }
+            /* Left column of Toppings */
             ul.left {
                    margin-left: 0;
                }
+            /* Right column of Toppings */
             ul.right{
                 margin-right: 20px;
             }
@@ -404,9 +438,11 @@ footer {
                 width: 40px;
             }
         }
+        /* Phone for mobile */
         #phone {
             display: none;
         }
+        /* Phone for desktop and tablet */
         #phone_desktop {
             text-align: center;
             h3 {
@@ -424,11 +460,13 @@ footer {
 /*  LAYOUT ABOVE 1024 PIXELS */
 @media only screen and (min-width: 1024px) {
 
+    /* Navigation */
     nav {
         a h1 {
             font-size: 6vw;
         }
     }
+    /* Header */
     header {
         h2 {
             font-size: 4.5vw;
@@ -439,9 +477,11 @@ footer {
         h1 {
             font-size: 3vw;
         }
+        /* Gallery Section */
         #gallery h1 {
             font-size: 3vw;
         }
+        /* Location Section */
         #location {
             img {
                 margin: 30px 0 -10px 0;
@@ -464,6 +504,7 @@ footer {
                     margin-left: 80px;
                 }
             }
+            /* Right column of Toppings */
             ul.right {
                 margin-right: 60px;
                 padding-right: 0;
@@ -477,6 +518,7 @@ footer {
     }
 
     footer {
+        /* Social media icons */
         img {
             padding-top: 10px;
             margin: 10px 5px 100px 5px;
@@ -489,6 +531,7 @@ footer {
         h4 {
              font-size: 2.5vw;
          }
+        /* Phone for desktop and tablet */
         #phone_desktop {
             text-align: center;
             h3 {
@@ -504,6 +547,7 @@ footer {
 
 /*  LAYOUT ABOVE 1200 PIXELS */
 @media only screen and (min-width: 1200px) {
+    /* Header */
     header {
         height: 750px;
         h2 {
@@ -514,6 +558,7 @@ footer {
             height: 500px;
         }
     }
+    /* Navigation */
     nav {
         a h1 {
             font-size: 5vw;
@@ -524,9 +569,11 @@ footer {
         h1 {
             font-size: 2.5vw;
         }
+        /* Gallery Section */
         #gallery h1 {
             font-size: 2.5vw;
         }
+        /* Location Section */
         #location  {
             h1 {
                 font-size: 2.5vw;

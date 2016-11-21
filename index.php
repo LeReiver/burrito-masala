@@ -1,11 +1,31 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: mike
+ * Programmer: Michael Le-Reiver
  * Date: 11/1/16
  * Time: 11:43 AM
+ * File: index.php 
+ * Description: A website for a fictitious fusion food cart in Portland, OR. Designed and developed using PHP and LESS.
  *
- * A website for a fictitious fusion food cart in Portland, OR
+ * - Images:
+ *      - All images are place holders and need to be updated.
+ *      - Hero(main) image optimum size is 1200px width and 700px height
+ *      - Food images optimum size is 1024px width and 680px height
+ *      - Location images optimum size is 700px width and 500px height
+ *
+ * - Responsive Grid System:
+ *      - This website uses Responsive Grid System for responsive columns for varying device size: http://www.responsivegridsystem.com/
+ *
+ * - Updating Menu Items:
+ *      - Menu items can be updated in the Ordering section. The reside in list tags. Type new menu items in between the <li> and </li> tags.
+ *
+ * - Color Palette:
+ *      Link to color palette https://color.adobe.com/cloud/aHR0cHM6Ly9jYy1hcGktYXNzZXRzLmFkb2JlLmlv/library/166e5450-0e50-11e5-a420-5fad9b827e82/theme/9a6561c3-3137-482b-9f59-99505d6df4f0/
+ *      - Red (#CF0021) is used for Ordering section headers and bordering sections.
+ *      - Light blue (#8AC2F1)  is used for bordering sections.
+ *      - Dark green (#036128) is used for the logo and footer
+ *      - Bright green (#4DAF18) is used for bordering sections.
+ *      - Orange (#EE6111) is used for the logo.
+
  */
 ?>
 
@@ -25,10 +45,13 @@
         <nav>
             <a href="#top"><h1><span id="burrito">Burrito</span><span id="masala">Masala</span></h1></a>
         </nav>
+        <!-- Paraphrase - Elevator Statement-->
         <h2>A Fresh &amp; Exotic Take on <br> Portland Street Food</h2>
     </header>
     <main>
+        <!-- Ordering Section -->
         <section id="ordering" class="section group">
+            <!-- How to Order steps are separated to form two columns on larger devices -->
             <h1>How To Order</h1>
             <div  class="col span_6_of_12">
                 <h3><span id="steps">1.</span> Choose either Burrito or Bowl <span id="price">$8</span></h3>
@@ -39,6 +62,7 @@
                 <h3><span id="steps">4.</span> Choose your Toppings</h3>
             </div>
             <div class="section group">
+                <!-- Meats and Veggies are separated to form two columns on larger devices -->
                 <div  class="col span_6_of_12">
                     <h2>Meats</h2>
                     <ul>
@@ -55,6 +79,7 @@
                     <li>Chile Relleno<br>&nbsp;&nbsp;(vegetarian, contains cheese)</li>
                 </ul>
             </div>
+                <!-- Rice and Toppings are separated to form two columns on larger devices -->
             <div  class="col span_6_of_12">
                 <h2>Rice (all vegan)</h2>
                 <ul>
@@ -64,7 +89,9 @@
                 </ul>
             </div>
             <div  class="col span_6_of_12">
+                <!-- Toppings are separated to form two columns on larger devices -->
                 <h2>Toppings</h2>
+                <!-- Left column toppings -->
                 <ul class="left">
                     <li>Mango Chutney</li>
                     <li>Tomatillo Salsa</li>
@@ -73,6 +100,7 @@
                     <li>Guacamole</li>
                     <li>&nbsp;&nbsp;(<span id="price">$.75</span> extra!)</li>
                 </ul>
+                <!-- Right column toppings -->
                 <ul class="right">
                     <li>Cheese</li>
                     <li>Sour cream</li>
@@ -81,6 +109,7 @@
                     <li>Cucumbers</li>
                     <li>Cilantro</li>
                 </ul>
+                <!-- Bottom column of toppings are separate because of length. Enables column adjustment on larger devices -->
             <ul class="bottom">
                 <li>Grandma Nena’s Fiery Red Salsa </li>
             </ul>
@@ -96,70 +125,24 @@
         <section id="location" class="section group">
             <h1>Find Us Here</h1>
             <div class="col span_6_of_12">
+                <!-- Map image link to  location on Google Maps-->
                 <map>
                     <a href="https://www.google.com/maps/place/313+SW+Alder+St,+Portland,+OR+97204/@45.5190208,-122.675541,17z/data=!3m1!4b1!4m5!3m4!1s0x54950a05c1ee2db9:0xce7ecf88b6d8e74b!8m2!3d45.5190208!4d-122.675541" target="_blank" >
                         <img src="includes/images/map.png" alt="map: 313 SW Alder St"></a>
                 </map>
+                <!-- Address -->
                 <p >313 SW Alder, Portland, OR</p>
             </div>
             <div class="col span_6_of_12">
                 <img src="includes/images/5thStCarts.jpg" alt="3rd Street Carts">
+                <!-- Hours of operation -->
                 <p>We are open 7 days a week<br>11am-7pm</p>
             </div>
         </section>
     </main>
-    <!-- Footer section-->
-    <footer  class="section group" >
-        <section id="bois">
-                <h3>Our Story</h3>
-            <div  class="col span_6_of_12">
-                <h4>Prasad</h4>
-                <p>Champollion cosmos preserve and cherish that pale blue dot tesseract, another world?
-                    Great turbulent clouds the ash of stellar alchemy cosmic ocean? Finite but unbounded
-                    ship of the imagination gathered by gravity and billions upon billions upon billions
-                    upon billions upon billions.
-                </p>
-            </div>
-            <div  class="col span_6_of_12">
-                <h4>Ramona</h4>
-                <p>Hypatia realm of the galaxies a very small stage in a vast
-                    cosmic arena! Birth! Cosmos a mote of dust suspended in a sunbeam, cosmos. Light
-                    years rich in heavy atoms, paroxysm of global death rich in mystery courage of our
-                    questions decipherment.
-                </p>
-            </div>
-        </section>
-        <div  class="section group">
-            <section id="phone" class="col span_6_of_12">
-                <div id="text">
-                    <h3>Text In Your Order</h3>
-                    <a href="sms:503-555-5555"><img src="includes/images/text_wht.png"alt="text us link"></a>
-                </div>
-                <div id="talk">
-                    <h3>Call In Your Order</h3>
-                    <a href="tel:503-555-5555"><img src="includes/images/talk_wht.png"alt="call us link"></a>
-                </div>
-            </section>
-            <section id="phone_desktop" class="col span_6_of_12">
-                <div>
-                    <h3>Call Us</h3>
-                    <p>503-555-5555</p>
-                </div>
-            </section>
-            <section id="social" class="col span_6_of_12">
-                <div>
-                    <h3>Be Social</h3>
-                </div>
-                    <a href="https://twitter.com/?lang=en" target="_blank"><img src="includes/images/twitter_wht.png" alt="twitter link"></a>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="includes/images/facebook_wht.png"alt="facebook link"></a>
-                    <a href="https://yelp.com/?lang=en" target="_blank"><img src="includes/images/yelp_wht.png" alt="yelp link"></a>
-                    <a href="https://www.pinterest.com/" target="_blank"><img src="includes/images/pinterest_wht.png" alt="pinterest link"></a>
-            </section>
-        </div>
-        <section id="copyright">
-            <p>&copy; 2016 Burrito Masala <br>Designed by Le-Reiver</p>
-        </section>
-    </footer>
+<!-- Requires footer file  -->
+    <?php require ('footer.php');?>
+<!-- Requires smooth scrolling script for anchor tags   -->
 <?php require('includes/smooth_scroll.php');?>
 </body>
 </html>

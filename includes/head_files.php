@@ -1,20 +1,22 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: mike
+ * Programmer: Michael Le-Reiver
  * Date: 11/8/16
  * Time: 10:07 AM
- * 
- * A file that holds the projects head files
+ * File Name: head_files.php
+ * Description: A file that holds the projects head files
  */
 ?>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Abel|Archivo+Scada:400,700" rel="stylesheet">
-<link rel="stylesheet" href="includes/styles/reset.css.php">
-<link rel="stylesheet" href="includes/styles/helper.css.php">
-<link rel="stylesheet" href="includes/styles/grid.css.php">
-<link rel="stylesheet" href="includes/styles/style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Metadata tags-->
+<meta charset="utf-8">  <!-- Character set-->
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">  <!-- Enables mobile auto-resize -->
 
-<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<!-- Stylesheets -->
+<link href="https://fonts.googleapis.com/css?family=Abel|Archivo+Scada:400,700" rel="stylesheet">  <!-- Google Fonts -->
+<link rel="stylesheet" href="includes/styles/reset.css.php"> <!--Removes any default styling -->
+<link rel="stylesheet" href="includes/styles/helper.css.php"> <!-- General helpful styles for all pages -->
+<link rel="stylesheet" href="includes/styles/grid.css.php"> <!-- Responsive grid for column arrangement -->
+<link rel="stylesheet" href="includes/styles/style.css">   <!-- Main CSS file -->
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>   <!-- CDN link for jQuery  -->

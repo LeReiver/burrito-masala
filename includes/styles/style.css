@@ -1,3 +1,11 @@
+/**
+ * Programmer: Michael Le-Reiver
+ * Date: 11/1/16
+ * Time: 11:43 AM
+ * File: style.less
+ * Description: Nested CSS styles for LESS compiling
+ */
+/* Global Styles */
 body {
   color: #EE6111;
   font-family: 'Scada', sans-serif;
@@ -10,6 +18,7 @@ body a {
 body a:hover {
   color: #036128;
 }
+/* Navigation Section - Fixed to top of screen. */
 nav {
   list-style-type: none;
   margin: 0;
@@ -45,7 +54,12 @@ nav #top {
   line-height: 10%;
   font-size: .5em;
 }
+/* Header Section */
 header {
+  /**  Gradient overlay on hero image.
+    * Hero Image Place holder.
+    * - Replace url of new image in tag below
+    */
   background-image: linear-gradient(rgba(10, 10, 10, 0.001), rgba(0, 0, 0, 0.8)), url("../images/hero.jpg");
   margin-top: 30px;
   padding: 0;
@@ -69,9 +83,14 @@ header h2 {
   text-shadow: #000 .25px .5px;
   font-family: 'Abel', sans-serif;
 }
+/* Main Section */
 main {
   z-index: 0;
   border-top: #4DAF18 solid 4px;
+  /* Ordering Section */
+  /* Gallery Section */
+  /* Location Section */
+  /* Map */
 }
 main h1 {
   font-size: 1.75em;
@@ -84,19 +103,14 @@ main ul li {
   display: block;
   color: #036128;
 }
-main #description h1 {
-  font-size: 1.75em;
-  font-family: 'Abel', sans-serif;
-  color: #EE6111 ;
-  font-weight: 600;
-  padding: 20px 0;
-  margin-bottom: 20px;
-  text-align: center;
-}
 main #ordering {
   padding: 0 0 20px 0;
-  border-top: #CF0021 solid 4px;
-  border-bottom: #4DAF18  solid 4px;
+  border-top: #8AC2F1 solid 4px;
+  border-bottom: #8AC2F1  solid 4px;
+  /* Left column of Toppings */
+  /* Right column of Toppings */
+  /* Bottom column of Toppings - Grandmas salsa */
+  /* Green color for dollar sign */
 }
 main #ordering h1 {
   text-align: center;
@@ -148,7 +162,7 @@ main #ordering #price {
 main #gallery {
   padding: 0;
   text-align: center;
-  border-top: #CF0021 solid 4px;
+  border-top: #4DAF18 solid 4px;
   border-bottom: #4DAF18  solid 4px;
 }
 main #gallery #column {
@@ -172,10 +186,11 @@ main #location {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  border-top: #CF0021 solid 4px;
+  border-top: #8AC2F1 solid 4px;
   border-bottom: #4DAF18  solid 4px;
   display: block;
   z-index: 0;
+  /* Image of food carts  */
 }
 main #location p {
   font-size: 20px;
@@ -193,13 +208,19 @@ main map {
   margin: 30px 0 0 0;
   display: block;
 }
+/* Footer Section */
 footer {
   background-color: #036128;
   color: #FFF;
   font-family: 'Scada', sans-serif;
   padding: 0;
   z-index: 1024;
-  border-top: #CF0021 solid 4px;
+  border-top: #8AC2F1 solid 4px;
+  /* Social media icons */
+  /* Chefs bios section */
+  /* Phone for Mobile */
+  /* Social Media Section */
+  /* Copyright Section */
 }
 footer h3 {
   margin: 20px 0;
@@ -265,51 +286,62 @@ footer #copyright p {
 }
 /*  LAYOUT BELOW 280 PIXELS */
 @media only screen and (max-width: 280px) {
+  /* Global */
   body {
     min-width: 270px;
   }
+  /* Header */
   header h2 {
     padding: 120px 0 60px 0;
   }
+  /* Navigation */
   nav a h1 {
     font-size: 3.25em;
   }
 }
 /*  LAYOUT ABOVE 300 PIXELS */
 @media only screen and (min-width: 300px) {
+  /* Header */
   header h2 {
     padding: 130px 0 60px 0;
   }
+  /* Navigation */
   nav a h1 {
     font-size: 3.25em;
   }
 }
 /*  LAYOUT ABOVE 380 PIXELS */
 @media only screen and (min-width: 380px) {
+  /* Header */
   header h2 {
     padding: 150px 0 60px 0;
   }
+  /* Navigation */
   nav a h1 {
     font-size: 3.25em;
   }
 }
 /*  LAYOUT ABOVE 465 PIXELS */
 @media only screen and (min-width: 465px) {
+  /* Header */
   header h2 {
     padding: 200px 0 60px 0;
   }
+  /* Navigation */
   nav a h1 {
     font-size: 3.25em;
   }
 }
 /*  LAYOUT ABOVE 600 PIXELS */
 @media only screen and (min-width: 600px) {
+  /* Header */
   header h2 {
     padding: 250px 0 60px 0;
   }
 }
 /*  LAYOUT ABOVE 769 PIXELS */
 @media only screen and (min-width: 769px) {
+  /* Header */
   header {
     height: 550px;
   }
@@ -317,12 +349,19 @@ footer #copyright p {
     padding: 425px 0 60px 0;
     font-size: 5vw;
   }
+  main {
+    /* Location Section */
+  }
   main #location p {
     font-size: 20px;
     margin-top: 15px;
   }
   main #location img {
     margin: 30px 0 -15px 0;
+  }
+  main #ordering {
+    /* Left column of Toppings */
+    /* Right column of Toppings */
   }
   main #ordering #steps {
     margin-top: 9px !important;
@@ -340,6 +379,10 @@ footer #copyright p {
   }
   main #ordering ul.right {
     margin-right: 20px;
+  }
+  footer {
+    /* Phone for mobile */
+    /* Phone for desktop and tablet */
   }
   footer #social {
     text-align: center;
@@ -372,14 +415,20 @@ footer #copyright p {
 }
 /*  LAYOUT ABOVE 1024 PIXELS */
 @media only screen and (min-width: 1024px) {
+  /* Navigation */
   nav a h1 {
     font-size: 6vw;
   }
+  /* Header */
   header {
     height: 600px;
   }
   header h2 {
     font-size: 4.5vw;
+  }
+  main {
+    /* Gallery Section */
+    /* Location Section */
   }
   main h1 {
     font-size: 3vw;
@@ -392,6 +441,9 @@ footer #copyright p {
   }
   main #location p {
     font-size: 22px;
+  }
+  main #ordering {
+    /* Right column of Toppings */
   }
   main #ordering h2 {
     font-size: 3vw;
@@ -409,6 +461,10 @@ footer #copyright p {
   }
   main #ordering ul li {
     font-size: 2vw;
+  }
+  footer {
+    /* Social media icons */
+    /* Phone for desktop and tablet */
   }
   footer img {
     padding-top: 10px;
@@ -435,6 +491,7 @@ footer #copyright p {
 }
 /*  LAYOUT ABOVE 1200 PIXELS */
 @media only screen and (min-width: 1200px) {
+  /* Header */
   header {
     height: 750px;
   }
@@ -445,8 +502,13 @@ footer #copyright p {
   header img {
     height: 500px;
   }
+  /* Navigation */
   nav a h1 {
     font-size: 5vw;
+  }
+  main {
+    /* Gallery Section */
+    /* Location Section */
   }
   main h1 {
     font-size: 2.5vw;
