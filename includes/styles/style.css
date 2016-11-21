@@ -21,7 +21,7 @@ nav {
   width: 100%;
   border-top: #CF0021 solid 4px;
   border-bottom: #4DAF18 solid 4px;
-  z-index: 3;
+  z-index: 100;
 }
 nav a h1 {
   text-align: center;
@@ -175,17 +175,19 @@ main #location {
   border-top: #CF0021 solid 4px;
   border-bottom: #4DAF18  solid 4px;
   display: block;
+  z-index: 0;
 }
 main #location p {
-  color: #000 ;
-  font-family: 'Scada', sans-serif;
   font-size: 20px;
-  font-weight: 500;
-  margin-top: 5px;
+  font-family: 'Abel', sans-serif;
+  color: #000 ;
+  font-weight: 600;
+  margin-top: 10px;
 }
 main #location img {
   display: block;
   width: 100%;
+  margin-bottom: -5px;
 }
 main map {
   margin: 30px 0 0 0;
@@ -196,6 +198,8 @@ footer {
   color: #FFF;
   font-family: 'Scada', sans-serif;
   padding: 0;
+  z-index: 1024;
+  border-top: #CF0021 solid 4px;
 }
 footer h3 {
   margin: 20px 0;
@@ -314,11 +318,11 @@ footer #copyright p {
     font-size: 5vw;
   }
   main #location p {
-    padding-top: 1%;
     font-size: 20px;
+    margin-top: 15px;
   }
   main #location img {
-    margin: 30px 0 0 0;
+    margin: 30px 0 -15px 0;
   }
   main #ordering #steps {
     margin-top: 9px !important;
@@ -336,10 +340,6 @@ footer #copyright p {
   }
   main #ordering ul.right {
     margin-right: 20px;
-  }
-  footer p {
-    font-size: 130%;
-    margin: .5em 1em 0 1em;
   }
   footer #social {
     text-align: center;
@@ -387,8 +387,11 @@ footer #copyright p {
   main #gallery h1 {
     font-size: 3vw;
   }
-  main #location h1 {
-    font-size: 3vw;
+  main #location img {
+    margin: 30px 0 -10px 0;
+  }
+  main #location p {
+    font-size: 22px;
   }
   main #ordering h2 {
     font-size: 3vw;
@@ -459,7 +462,7 @@ footer #copyright p {
     margin: 30px 0 0 0;
   }
   main #location p {
-    font-size: 20px;
+    font-size: 25px;
   }
   main #ordering h2 {
     font-size: 2.5vw;

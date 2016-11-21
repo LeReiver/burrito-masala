@@ -50,9 +50,9 @@
             <div  class="col span_6_of_12">
                 <h2>Veggies</h2>
                 <ul>
-                    <li>Sambar (lentil curry, vegan)</li>
-                    <li>Aloo Gobi Masala <br>&nbsp;&nbsp;(potato and cauliflower, vegan)</li>
-                    <li>Chile Relleno <br>&nbsp;&nbsp;(vegetarian, contains cheese)</li>
+                    <li>Sambar<br>&nbsp;&nbsp;(lentil curry, vegan)</li>
+                    <li>Aloo Gobi Masala<br>&nbsp;&nbsp;(potato and cauliflower, vegan)</li>
+                    <li>Chile Relleno<br>&nbsp;&nbsp;(vegetarian, contains cheese)</li>
                 </ul>
             </div>
             <div  class="col span_6_of_12">
@@ -60,7 +60,7 @@
                 <ul>
                     <li>Kerala Biryani</li>
                     <li>Spanish Rice</li>
-                    <li>White or Brown Rice (khaima)</li>
+                    <li>White or <br>&nbsp;&nbsp;Brown Rice (khaima)</li>
                 </ul>
             </div>
             <div  class="col span_6_of_12">
@@ -98,12 +98,13 @@
             <div class="col span_6_of_12">
                 <map>
                     <a href="https://www.google.com/maps/place/313+SW+Alder+St,+Portland,+OR+97204/@45.5190208,-122.675541,17z/data=!3m1!4b1!4m5!3m4!1s0x54950a05c1ee2db9:0xce7ecf88b6d8e74b!8m2!3d45.5190208!4d-122.675541" target="_blank" >
-                        <img src="includes/images/map.png"></a>
+                        <img src="includes/images/map.png" alt="map: 313 SW Alder St"></a>
                 </map>
-                <p >313 SW Alder, Portland, OR<br>We are open 7 days a week<br>11am-7pm</p>
-                </div>
-            <div  class="col span_6_of_12">
-                <img src="includes/images/5thStCarts2.jpg" alt="3rd Street Carts">
+                <p >313 SW Alder, Portland, OR</p>
+            </div>
+            <div class="col span_6_of_12">
+                <img src="includes/images/5thStCarts.jpg" alt="3rd Street Carts">
+                <p>We are open 7 days a week<br>11am-7pm</p>
             </div>
         </section>
     </main>
@@ -132,11 +133,11 @@
             <section id="phone" class="col span_6_of_12">
                 <div id="text">
                     <h3>Text In Your Order</h3>
-                    <a href="sms:503-555-5555"><img src="includes/images/text_wht.png"></a>
+                    <a href="sms:503-555-5555"><img src="includes/images/text_wht.png"alt="text us link"></a>
                 </div>
                 <div id="talk">
                     <h3>Call In Your Order</h3>
-                    <a href="tel:503-555-5555"><img src="includes/images/talk_wht.png"></a>
+                    <a href="tel:503-555-5555"><img src="includes/images/talk_wht.png"alt="call us link"></a>
                 </div>
             </section>
             <section id="phone_desktop" class="col span_6_of_12">
@@ -149,10 +150,10 @@
                 <div>
                     <h3>Be Social</h3>
                 </div>
-                    <a href="https://twitter.com/?lang=en" target="_blank"><img src="includes/images/twitter_wht.png"></a>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="includes/images/facebook_wht.png"></a>
-                    <a href="https://yelp.com/?lang=en" target="_blank"><img src="includes/images/yelp_wht.png"></a>
-                    <a href="https://www.pinterest.com/" target="_blank"><img src="includes/images/pinterest_wht.png"></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><img src="includes/images/twitter_wht.png" alt="twitter link"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="includes/images/facebook_wht.png"alt="facebook link"></a>
+                    <a href="https://yelp.com/?lang=en" target="_blank"><img src="includes/images/yelp_wht.png" alt="yelp link"></a>
+                    <a href="https://www.pinterest.com/" target="_blank"><img src="includes/images/pinterest_wht.png" alt="pinterest link"></a>
             </section>
         </div>
         <section id="copyright">
