@@ -1,131 +1,163 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: mike
- * Date: 11/1/16
- * Time: 11:43 AM
- */
-?>
-
+<?php ?>
 <!DOCTYPE html>
+<!--
+* Programmer: Michael Le-Reiver
+* Date: 11/1/16
+* Time: 11:43 AM
+* File: index.php
+* Description: A website for a fictitious fusion food cart in Portland, OR. Designed and developed using PHP and LESS.
+
+*  NOTES FOR FUTURE MODIFICATIONS
+
+ * Images:
+ *      - All images are place holders and need to be updated.
+ *      - Hero(main) image optimum size is 1200px width and 700px height
+ *      - Food images optimum size is 1024px width and 680px height
+ *      - Location images optimum size is 700px width and 500px height
+ *
+ * Responsive Grid System:
+ *      - This website uses Responsive Grid System for responsive columns for varying device size: http://www.responsivegridsystem.com/
+ *
+ * Updating Menu Items:
+ *      - Menu items can be updated in the Ordering section. The reside in list tags. Type new menu items in between the <li> and </li> tags.
+ *
+ * Color Palette:
+ *      Link to color palette https://color.adobe.com/cloud/aHR0cHM6Ly9jYy1hcGktYXNzZXRzLmFkb2JlLmlv/library/166e5450-0e50-11e5-a420-5fad9b827e82/theme/9a6561c3-3137-482b-9f59-99505d6df4f0/
+ *      - Red (#CF0021) is used for Ordering section headers and bordering sections.
+ *      - Light blue (#8AC2F1)  is used for bordering sections.
+ *      - Dark green (#036128) is used for the logo and footer
+ *      - Bright green (#4DAF18) is used for bordering sections.
+ *      - Orange (#EE6111) is used for the logo.
+ * SEO Assets:
+ *      - Description: Burrito Masala is a fictitious food cart located in downtown
+ *          Portland, OR that specializes in delicious southern Indian (Kerala) and Mexican foods... stuffed
+ *          in a flour tortilla! Diners can also opt to go gluten free with our bowl options. We’re run by a
+ *          husband and wife team (James Beard award­winning chefs Prasad Varma and Ramona Varma­Hernandez)
+ *      - Keywords: Burrito Masala, burrito masala, burrito, masala, tikka, pork, verde,
+ *          sambar, aloo gobi, chili relleno, chutney, curry, kerala, biryani, rice bowl, vegan, modern, spicy,
+ *          exotic, fusion, food cart, Southern Indian, Mexican, Portland, Oregon, downtown
+-->
 <html lang="en">
 <head>
-    <?php require_once('includes/head_files.php'); ?>
-    <title>Burrito Masala</title>
+<title>Burrito Masala</title>
+<!-- Metadata Tags -->
+<meta name="description" content="Burrito Masala is a fictitious food cart located in downtown
+    Portland, OR that specializes in delicious southern Indian (Kerala) and Mexican foods... stuffed
+    in a flour tortilla! Diners can also opt to go gluten free with our bowl options. We’re run by a
+    husband and wife team (James Beard award­winning chefs Prasad Varma and Ramona Varma­Hernandez)"> <!-- Description for search engines-->
+<meta name="keyword" content="Burrito Masala, burrito masala, burrito, masala, tikka, pork, verde,
+    sambar, aloo gobi, chili relleno, chutney, curry, kerala, biryani, rice bowl, vegan, modern, spicy,
+    exotic, fusion, food cart, Southern Indian, Mexican, Portland, Oregon, downtown "> <!--Keywords for SEO -->
+<!--Requires use of head files file-->
+<?php require_once('includes/utility/head_files.php'); ?>
 </head>
 
 <body>
+    <!--Section holds id for top anchor. Non breaking space used to compensate for navigation height. -->
     <section id="top">&nbsp;</section>
+    <!--Header section-->
     <header>
         <nav>
-            <a href="#top"><h1>Burrito Masala</h1></a>
+            <a href="#top"><h1><span id="burrito">Burrito</span><span id="masala">Masala</span></h1></a>
         </nav>
-        <h2>A fresh &amp; exotic take on <br> Portland Street Food</h2>
+        <!-- Paraphrase - Elevator Statement-->
+        <h2>A Fresh &amp; Exotic Take on <br> Portland Street Food</h2>
     </header>
-    
     <main>
-        <section id="location">
-            <h1>Find Us Here</h1>
-            <map>
-                <a href="https://www.google.com/maps/place/313+SW+Alder+St,+Portland,+OR+97204/@45.5190208,-122.675541,17z/data=!3m1!4b1!4m5!3m4!1s0x54950a05c1ee2db9:0xce7ecf88b6d8e74b!8m2!3d45.5190208!4d-122.675541" target="_blank" >
-                    <img align="center" src="includes/images/map.png"></a>
-            </map>
-            <p>313 SW Alder, Portland, OR<br>We are open 7 days a week<br>11am-7pm</p>
-        </section>
-        <section id="gallery">
-            <h1>Our Food</h1>
-            <ul>
-                <li><img src="includes/images/meatBurrito.jpg">Pork Burrito</li>
-                <li><img src="includes/images/vegBurrito.jpg">Sambar Burrito</li>
-                <br>
-                <li><img src="includes/images/riceBowl.jpg">Lamb Curry Bowl</li>
-                <li><img src="includes/images/vegBowl.jpg">Chile Relleno Bowl</li>
-                <br>
-                <li><img src="includes/images/indianBowl.jpg">Aloo Gobi Masala Bowl</li>
-                <li><img src="includes/images/fifthStreet.jpg">3rd Street Carts</li>
-            </ul>
-        </section>
-        <section id="ordering">
+        <!-- Ordering Section -->
+        <section id="ordering" class="section group">
+            <!-- How to Order steps are separated to form two columns on larger devices -->
             <h1>How To Order</h1>
-            <h3>1. Choose either Burrito or Bowl</h3>
-            <h3>2. Choose either Meat or Veggie</h3>
-            <h3>3. Choose type of Rice</h3>
-            <h3>4. Choose your Toppings</h3>
-            <h2>Meat</h2>
-            <ul>
-                <li>Chicken Tikka Masala</li>
-                <li>Lamb Curry</li>
-                <li>Pork in Salsa Verde</li>
-            </ul>
-            <h2>Veggie</h2>
-            <ul>
-                <li>Sambar (lentil curry, vegan)</li>
-                <li>Aloo Gobi Masala <br>&nbsp;&nbsp;(potato and cauliflower, vegan)</li>
-                <li>Chile Relleno <br>&nbsp;&nbsp;(vegetarian, contains cheese)</li>
-            </ul>
-            <h2>Rice (all vegan)</h2>
-            <ul>
-                <li>Kerala Biryani</li>
-                <li>Spanish Rice</li>
-                <li>White or Brown Rice (khaima)</li>
-            </ul>
-            <h2>Toppings</h2>
-            <ul class="left">
-                <li>Mango Chutney</li>
-                <li>Tomatillo Salsa</li>
-                <li>Raita</li>
-                <li>Sour cream</li>
-                <li>Guacamole</li>
-                <li>&nbsp;&nbsp;($.75 extra!)</li>
-            </ul>
-            <ul class="right">
-                <li>Cheese</li>
-                <li>Sour cream</li>
-                <li>Onions</li>
-                <li>Tomatoes</li>
-                <li>Cucumbers</li>
-                <li>Cilantro</li>
-            </ul>
+            <div  class="col span_6_of_12">
+                <h3><span id="steps">1.</span> Choose either Burrito or Bowl <span id="price">$8</span></h3>
+                <h3><span id="steps">2.</span> Choose choice of Meat or Veggie</h3>
+            </div>
+            <div  class="col span_6_of_12" id="steps" style="margin-top: -4px;">
+                <h3><span id="steps">3.</span> Choose type of Rice</h3>
+                <h3><span id="steps">4.</span> Choose your Toppings</h3>
+            </div>
+            <div class="section group">
+                <!-- Meats and Veggies are separated to form two columns on larger devices -->
+                <div  class="col span_6_of_12">
+                    <h2>Meats</h2>
+                    <ul>
+                        <li>Chicken Tikka Masala</li>
+                        <li>Lamb Curry</li>
+                        <li>Pork in Salsa Verde</li>
+                    </ul>
+                </div>
+            <div  class="col span_6_of_12">
+                <h2>Veggies</h2>
+                <ul>
+                    <li>Sambar<br>&nbsp;&nbsp;(lentil curry, vegan)</li>
+                    <li>Aloo Gobi Masala<br>&nbsp;&nbsp;(potato and cauliflower, vegan)</li>
+                    <li>Chile Relleno<br>&nbsp;&nbsp;(vegetarian, contains cheese)</li>
+                </ul>
+            </div>
+                <!-- Rice and Toppings are separated to form two columns on larger devices -->
+            <div  class="col span_6_of_12">
+                <h2>Rice (all vegan)</h2>
+                <ul>
+                    <li>Kerala Biryani</li>
+                    <li>Spanish Rice</li>
+                    <li>White or <br>&nbsp;&nbsp;Brown Rice (khaima)</li>
+                </ul>
+            </div>
+            <div  class="col span_6_of_12">
+                <!-- Toppings are separated to form two columns on larger devices -->
+                <h2>Toppings</h2>
+                <!-- Left column toppings -->
+                <ul class="left">
+                    <li>Mango Chutney</li>
+                    <li>Tomatillo Salsa</li>
+                    <li>Raita</li>
+                    <li>Sour cream</li>
+                    <li>Guacamole</li>
+                    <li>&nbsp;&nbsp;(<span id="price">$.75</span> extra!)</li>
+                </ul>
+                <!-- Right column toppings -->
+                <ul class="right">
+                    <li>Cheese</li>
+                    <li>Sour cream</li>
+                    <li>Onions</li>
+                    <li>Tomatoes</li>
+                    <li>Cucumbers</li>
+                    <li>Cilantro</li>
+                </ul>
+                <!-- Bottom column of toppings are separate because of length. Enables column adjustment on larger devices -->
             <ul class="bottom">
                 <li>Grandma Nena’s Fiery Red Salsa </li>
             </ul>
         </section>
+        <!--Gallery section -->
+        <section id="gallery">
+            <div class="section group">
+                <div id="column" class="col span_6_of_12"><img src="includes/images/vegBurrito.jpg" alt="Sambar Burrito"></div>
+                <div id="column" class="col span_6_of_12"><img src="includes/images/riceBowl.jpg" alt="Lamb Curry Bowl"></div>
+            </div>
+        </section>
+        <!--Location section-->
+        <section id="location" class="section group">
+            <h1>Find Us Here</h1>
+            <div class="col span_6_of_12">
+                <!-- Map image link to  location on Google Maps-->
+                <map>
+                    <a href="https://www.google.com/maps/place/313+SW+Alder+St,+Portland,+OR+97204/@45.5190208,-122.675541,17z/data=!3m1!4b1!4m5!3m4!1s0x54950a05c1ee2db9:0xce7ecf88b6d8e74b!8m2!3d45.5190208!4d-122.675541" target="_blank" >
+                        <img src="includes/images/map.png" alt="map: 313 SW Alder St"></a>
+                </map>
+                <!-- Address -->
+                <p >313 SW Alder, Portland, OR</p>
+            </div>
+            <div class="col span_6_of_12">
+                <img src="includes/images/5thStCarts.jpg" alt="3rd Street Carts">
+                <!-- Hours of operation -->
+                <p>We are open 7 days a week<br>11am-7pm</p>
+            </div>
+        </section>
     </main>
-    
-    <footer>
-        <section id="bois">
-            <h3>Our Story</h3>
-            <h4>Prasad</h4>
-                <p>
-                    Champollion cosmos preserve and cherish that pale blue dot tesseract, another world?
-                    Great turbulent clouds the ash of stellar alchemy cosmic ocean? Finite but unbounded
-                    ship of the imagination gathered by gravity and billions upon billions upon billions
-                    upon billions upon billions upon billions upon billions.
-                </p>
-            <h4>Ramona</h4>
-                <p>
-                    Hypatia realm of the galaxies a very small stage in a vast
-                    cosmic arena! Birth! Cosmos a mote of dust suspended in a sunbeam, cosmos. Light
-                    years rich in heavy atoms, paroxysm of global death rich in mystery courage of our
-                    questions decipherment, the only home we've ever known shores of the cosmic ocean!
-                </p>
-        </section>
-        <section id="social">
-            <h3>Follow Us</h3>
-            <a href="https://twitter.com/?lang=en"><img src="includes/images/twitter_wht.png" width="50px"></a>
-            <h3>Like Us</h3>
-            <a href="https://www.facebook.com/"><img src="includes/images/facebook_wht.png" width="50px"></a>
-        </section>
-        <section id="phone">
-            <h3>Text In Your Order</h3>
-            <a href="sms:503-555-5555"><img src="includes/images/text_wht.png" width="50px"></a>
-            <h3>Call In Your Order</h3>
-            <a href="tel:503-555-5555"><img src="includes/images/talk_wht.png" width="50px" ></a>
-        </section>
-        <section id="copyright">
-            <p>&copy; 2016 Burrito Masala</p>
-        </section>
-    </footer>
-<?php require('includes/smooth_scroll.php');?>
+<!-- Requires use of footer file  -->
+<?php require ('footer.php');?>
+<!-- Requires use of smooth scrolling script for anchor tags   -->
+<?php require('includes/scripts/smooth_scroll.php');?>
 </body>
 </html>

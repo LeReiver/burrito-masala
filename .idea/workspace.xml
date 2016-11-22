@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="0b9c3724-fff7-4bc8-b691-c504b70bfa4c" name="Default" comment="" />
+=======
+    <list default="true" id="0b9c3724-fff7-4bc8-b691-c504b70bfa4c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+>>>>>>> working_branch
     <ignored path="burritoMasala.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -25,11 +31,27 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="156">
               <caret line="115" column="28" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
               <folding>
                 <element signature="e#6#86#0#PHP" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="255">
+              <caret line="141" column="29" selection-start-line="141" selection-start-column="29" selection-end-line="141" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head_files.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/utility/head_files.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+>>>>>>> working_branch
             </state>
           </provider>
         </entry>
@@ -37,8 +59,13 @@
       <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/styles/style.less">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="2640">
               <caret line="176" column="1" selection-start-line="176" selection-start-column="1" selection-end-line="176" selection-end-column="1" />
+=======
+            <state relative-caret-position="2565">
+              <caret line="171" column="22" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
+>>>>>>> working_branch
               <folding />
             </state>
           </provider>
@@ -54,13 +81,20 @@
       <list>
         <option value="$PROJECT_DIR$/includes/style.css.php" />
         <option value="$PROJECT_DIR$/includes/reset.css.php" />
-        <option value="$PROJECT_DIR$/includes/styles/reset.css.php" />
         <option value="$PROJECT_DIR$/includes/styles/style.css.php" />
         <option value="$PROJECT_DIR$/includes/styles/helper.css.php" />
+        <option value="$PROJECT_DIR$/includes/styles/reset.css.php" />
+        <option value="$PROJECT_DIR$/includes/grid.css.php" />
         <option value="$PROJECT_DIR$/includes/smooth_scroll.php" />
-        <option value="$PROJECT_DIR$/includes/head_files.php" />
-        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/includes/styles/grid.css.php" />
+        <option value="$PROJECT_DIR$/footer.php" />
+        <option value="$PROJECT_DIR$/includes/styles/style.css" />
         <option value="$PROJECT_DIR$/includes/styles/style.less" />
+        <option value="$PROJECT_DIR$/includes/head_files.php" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/includes/utility/head_files.php" />
+        <option value="$PROJECT_DIR$/includes/scripts/smooth_scroll.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -68,6 +102,9 @@
   <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
@@ -177,17 +214,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="web.server" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../web/graphics" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/includes/images" />
       <recent name="$PROJECT_DIR$/includes/scripts" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/includes/utility" />
+      <recent name="$PROJECT_DIR$/includes/scripts" />
       <recent name="$PROJECT_DIR$/includes/styles" />
     </key>
   </component>
@@ -226,6 +266,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0b9c3724-fff7-4bc8-b691-c504b70bfa4c" name="Default" comment="" />
@@ -241,7 +284,24 @@
       <workItem from="1478304122840" duration="2360000" />
       <workItem from="1478374491344" duration="9042000" />
       <workItem from="1478623322584" duration="1731000" />
-      <workItem from="1478628302007" duration="2373000" />
+      <workItem from="1478628302007" duration="8708000" />
+      <workItem from="1478643081388" duration="3688000" />
+      <workItem from="1478712004056" duration="10554000" />
+      <workItem from="1478807005398" duration="2951000" />
+      <workItem from="1478815840421" duration="3000" />
+      <workItem from="1478826516535" duration="5822000" />
+      <workItem from="1479236417030" duration="5382000" />
+      <workItem from="1479243825498" duration="2324000" />
+      <workItem from="1479249853578" duration="1855000" />
+      <workItem from="1479316797522" duration="894000" />
+      <workItem from="1479406624695" duration="12071000" />
+      <workItem from="1479431704975" duration="7549000" />
+      <workItem from="1479504802779" duration="3546000" />
+      <workItem from="1479601491564" duration="420000" />
+      <workItem from="1479602082607" duration="881000" />
+      <workItem from="1479752154180" duration="12964000" />
+      <workItem from="1479842650019" duration="2223000" />
+      <workItem from="1479845907305" duration="163000" />
     </task>
     <task id="LOCAL-00001" summary="Updated navigation and fixed header.">
       <created>1478370920204</created>
@@ -250,11 +310,120 @@
       <option name="project" value="LOCAL" />
       <updated>1478370920204</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added background colors to sections. Cleaned up paddings and margins. Added smooth scrolling, and moved head files to own file.">
+      <created>1478631048149</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1478631048149</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Misc clean up">
+      <created>1478633048625</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1478633048625</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added grid layout for responsiveness">
+      <created>1478637092695</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1478637092695</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added more social media links. Optimized images.">
+      <created>1478646756599</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1478646756599</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added media queries for desktop and tablet.">
+      <created>1478721801345</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1478721801345</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Column cleanup">
+      <created>1478722290086</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1478722290086</updated>
+    </task>
+    <task id="LOCAL-00008" summary="More responsive column cleanup">
+      <created>1478722682553</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1478722682553</updated>
+    </task>
+    <task id="LOCAL-00009" summary="More responsive column cleanup">
+      <created>1479242098138</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1479242098138</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Desktop column cleanup">
+      <created>1479415889921</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1479415889921</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Adjusted tablet column spacing">
+      <created>1479601964454</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1479601964454</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Final style adjustments">
+      <created>1479757094516</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1479757094516</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added comments. Final adjustments.">
+      <created>1479765633185</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1479765633185</updated>
+    </task>
+    <task id="LOCAL-00014" summary="A little refactoring">
+      <created>1479766459767</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1479766459767</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added SEO metadata. Updated comments">
+      <created>1479844337868</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1479844337868</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Updated comments">
+      <created>1479844421858</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1479844421858</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="23749000" />
+=======
+    <option name="totallyTimeSpent" value="103322000" />
+>>>>>>> working_branch
   </component>
   <component name="ToolWindowManager">
     <frame x="354" y="33" width="865" height="802" extended-state="0" />
@@ -263,6 +432,7 @@
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49210206" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2985366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30048078" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -270,29 +440,64 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32580644" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2633803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30048078" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26264045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> working_branch
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+=======
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2985366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> working_branch
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32580644" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated navigation and fixed header." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated navigation and fixed header." />
+    <MESSAGE value="Added background colors to sections. Cleaned up paddings and margins. Added smooth scrolling, and moved head files to own file." />
+    <MESSAGE value="Misc clean up" />
+    <MESSAGE value="Added grid layout for responsiveness" />
+    <MESSAGE value="Added more social media links. Optimized images." />
+    <MESSAGE value="Added media queries for desktop and tablet." />
+    <MESSAGE value="Column cleanup" />
+    <MESSAGE value="More responsive column cleanup" />
+    <MESSAGE value="Desktop column cleanup" />
+    <MESSAGE value="Adjusted tablet column spacing" />
+    <MESSAGE value="Final style adjustments" />
+    <MESSAGE value="Added comments. Final adjustments." />
+    <MESSAGE value="A little refactoring" />
+    <MESSAGE value="Added SEO metadata. Updated comments" />
+    <MESSAGE value="Updated comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/includes/images/map.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -333,11 +538,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4230">
           <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+=======
+    <entry file="file://$PROJECT_DIR$/includes/utility/head_files.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+>>>>>>> working_branch
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/styles/style.less">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="2640">
           <caret line="176" column="1" selection-start-line="176" selection-start-column="1" selection-end-line="176" selection-end-column="1" />
           <folding />
@@ -362,10 +574,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> working_branch
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/includes/scripts/smooth_scroll.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -380,6 +597,12 @@
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/includes/styles/grid.css.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+>>>>>>> working_branch
         </state>
       </provider>
     </entry>
@@ -387,9 +610,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+<<<<<<< HEAD
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
           </folding>
+=======
+          <folding />
+>>>>>>> working_branch
         </state>
       </provider>
     </entry>
@@ -405,9 +632,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1935">
           <caret line="134" column="8" selection-start-line="134" selection-start-column="8" selection-end-line="134" selection-end-column="8" />
+<<<<<<< HEAD
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
           </folding>
+=======
+          <folding />
+>>>>>>> working_branch
         </state>
       </provider>
     </entry>
@@ -430,9 +661,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
           <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+<<<<<<< HEAD
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
           </folding>
+=======
+          <folding />
+>>>>>>> working_branch
         </state>
       </provider>
     </entry>
@@ -448,9 +683,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+<<<<<<< HEAD
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
           </folding>
+=======
+          <folding />
+>>>>>>> working_branch
         </state>
       </provider>
     </entry>
@@ -473,9 +712,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+<<<<<<< HEAD
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
           </folding>
+=======
+          <folding />
+>>>>>>> working_branch
         </state>
       </provider>
     </entry>
@@ -505,9 +748,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+<<<<<<< HEAD
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
           </folding>
+=======
+          <folding />
+>>>>>>> working_branch
         </state>
       </provider>
     </entry>
@@ -537,9 +784,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
           </folding>
+=======
+          <folding />
+>>>>>>> working_branch
         </state>
       </provider>
     </entry>
@@ -562,71 +813,143 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
           </folding>
+=======
+          <folding />
+>>>>>>> working_branch
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/styles/style.css.php" />
     <entry file="file://$PROJECT_DIR$/includes/styles/style.css.php" />
-    <entry file="file://$PROJECT_DIR$/includes/scripts/jquery-1.11.0.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/styles/helper.css.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/scripts/jquery-1.11.0.min.js" />
+    <entry file="file://$PROJECT_DIR$/includes/images/hero.jpg" />
     <entry file="file://$PROJECT_DIR$/includes/styles/reset.css.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+<<<<<<< HEAD
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state relative-caret-position="75">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+>>>>>>> working_branch
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/images/vegBowl.jpg" />
+    <entry file="file://$PROJECT_DIR$/includes/images/meatBurrito.jpg" />
+    <entry file="file://$PROJECT_DIR$/includes/images/map.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/images/indianBowl.jpg" />
+    <entry file="file://$PROJECT_DIR$/includes/images/riceBowl.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/images/vegBurrito.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/images/map_mobile.png" />
+    <entry file="file://$PROJECT_DIR$/includes/images/hero_mobile.jpg" />
+    <entry file="file://$PROJECT_DIR$/includes/images/Shawarmafood.jpg" />
+    <entry file="file://$PROJECT_DIR$/includes/images/hero.png" />
+    <entry file="file://$PROJECT_DIR$/includes/images/fifthStreet.jpg" />
+    <entry file="file://$PROJECT_DIR$/includes/styles/helper.css.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/styles/grid.css.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding>
+            <element signature="e#6#218#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1665">
-          <caret line="120" column="1" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="115" column="28" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="-4230">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/styles/style.less">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="156">
+          <caret line="115" column="28" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="2565">
+          <caret line="171" column="22" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
+          <folding />
+>>>>>>> working_branch
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="2640">
           <caret line="176" column="1" selection-start-line="176" selection-start-column="1" selection-end-line="176" selection-end-column="1" />
+=======
+        <state relative-caret-position="300">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/utility/head_files.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+>>>>>>> working_branch
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/smooth_scroll.php">
+    <entry file="file://$PROJECT_DIR$/includes/scripts/smooth_scroll.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="405">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+=======
+        <state relative-caret-position="285">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+>>>>>>> working_branch
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/head_files.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
+<<<<<<< HEAD
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+=======
+          <caret line="141" column="29" selection-start-line="141" selection-start-column="29" selection-end-line="141" selection-end-column="29" />
+          <folding />
+>>>>>>> working_branch
         </state>
       </provider>
     </entry>

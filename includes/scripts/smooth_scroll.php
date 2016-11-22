@@ -1,13 +1,11 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: mike
+ * Programmer: Chris Coyier: https://css-tricks.com/snippets/jquery/smooth-scrolling/
  * Date: 11/8/16
  * Time: 10:05 AM
- *
- * A function that provides smooth animated scrolling
+ * File: smooth_scroll.php
+ * Description: A function that provides smooth animated scrolling.
  */
-require_once ('head_files.php')
 ?>
 <script>
     $(function() {

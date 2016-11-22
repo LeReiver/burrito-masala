@@ -1,3 +1,11 @@
+/**
+ * Programmer: Michael Le-Reiver
+ * Date: 11/1/16
+ * Time: 11:43 AM
+ * File: style.less
+ * Description: Nested CSS styles for LESS compiling
+ */
+/* Global Styles */
 body {
   color: #EE6111;
   font-family: 'Scada', sans-serif;
@@ -10,6 +18,7 @@ body a {
 body a:hover {
   color: #036128;
 }
+/* Navigation Section - Fixed to top of screen. */
 nav {
   list-style-type: none;
   margin: 0;
@@ -21,29 +30,38 @@ nav {
   width: 100%;
   border-top: #CF0021 solid 4px;
   border-bottom: #4DAF18 solid 4px;
-  z-index: 3;
+  z-index: 100;
 }
 nav a h1 {
   text-align: center;
-  margin: 0 ;
-  font-weight: 900;
-  font-size: 3em;
+  margin: 0;
+  font-size: 2.75em;
   font-family: 'Abel', sans-serif;
-  color: #EE6111;
   padding: 5px 0;
   text-decoration: none;
 }
-nav a h1:hover {
+nav a h1 #burrito {
+  font-weight: 900;
   color: #036128;
 }
+nav a h1 #masala {
+  font-weight: 200;
+  color: #EE6111;
+  text-shadow: .25px 2px black;
+}
 nav #top {
-  margin-top: -40px;
+  margin-top: -50px;
   line-height: 10%;
   font-size: .5em;
 }
+/* Header Section */
 header {
-  background-image: linear-gradient(rgba(100, 100, 100, 0.35), rgba(0, 0, 0, 0.35)), url("../images/hero_mobile.jpg");
-  margin-top: 50px;
+  /**  Gradient overlay on hero image.
+    * Hero Image Place holder.
+    * - Replace url of new image in tag below
+    */
+  background-image: linear-gradient(rgba(10, 10, 10, 0.001), rgba(0, 0, 0, 0.8)), url("../images/hero.jpg");
+  margin-top: 30px;
   padding: 0;
   width: 100%;
   height: 60vw;
@@ -58,14 +76,21 @@ header {
 header h2 {
   text-align: center;
   margin: 0 auto 30px auto;
-  padding: 125px 0 60px 0;
-  font-size: 1.5em;
-  font-weight: 500;
-  color: rgba(225, 225, 225, 0.9);
+  padding: 120px 0 60px 0;
+  font-size: 6vw;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: #000 .25px .5px;
+  font-family: 'Abel', sans-serif;
 }
+/* Main Section */
 main {
   z-index: 0;
   border-top: #4DAF18 solid 4px;
+  /* Ordering Section */
+  /* Gallery Section */
+  /* Location Section */
+  /* Map */
 }
 main h1 {
   font-size: 1.75em;
@@ -78,53 +103,14 @@ main ul li {
   display: block;
   color: #036128;
 }
-main #location {
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-  border-top: #036128 solid 4px;
-}
-main #location p {
-  color: #EE6111;
-  font-family: 'Scada', sans-serif;
-  font-size: 1.25em;
-  font-weight: 500;
-}
-main map {
-  display: block;
-  margin: 30px;
-  border: #EE6111  solid 4px;
-}
-main #gallery {
-  padding: 0 0 20px 0;
-}
-main #gallery ul {
-  text-align: center;
-}
-main #gallery ul li {
-  background-color: #EE6111;
-  display: inline-block;
-  margin: 0;
-  padding-bottom: 10px;
-  border-top: #CF0021  solid 2px;
-  font-size: 1.25em;
-}
-main #gallery ul li img {
-  border-bottom: #4DAF18  solid 2px;
-}
-main #gallery h1 {
-  font-size: 1.75em;
-  font-family: 'Abel', sans-serif;
-  color: #CF0021 ;
-  font-weight: 600;
-  padding-top: 20px;
-  text-align: center;
-}
 main #ordering {
-  background-color: rgba(138, 194, 241, 0.45);
   padding: 0 0 20px 0;
-  margin-top: -20px;
-  border-top: #CF0021 solid 4px;
+  border-top: #8AC2F1 solid 4px;
+  border-bottom: #8AC2F1  solid 4px;
+  /* Left column of Toppings */
+  /* Right column of Toppings */
+  /* Bottom column of Toppings - Grandmas salsa */
+  /* Green color for dollar sign */
 }
 main #ordering h1 {
   text-align: center;
@@ -139,24 +125,26 @@ main #ordering h2 {
 }
 main #ordering h3 {
   text-align: start;
-  padding: 10px 0 0 20px;
+  padding: 10px 0 0 5px;
   font-size: 1.25em;
   font-family: 'Abel', sans-serif;
-  color: #EE6111 ;
+  color: #000 ;
   font-weight: 600;
   line-height: 80%;
 }
+main #ordering h3 #steps {
+  color: #EE6111;
+}
 main #ordering ul {
-  padding-left: .5em;
+  padding-left: 0;
 }
 main #ordering ul li {
   font-size: 1.2em;
   font-family: 'Abel', sans-serif;
-  color: #EE6111 ;
+  color: #000 ;
   font-weight: 600;
   line-height: 120%;
-  list-style: disc;
-  padding-left: .5em;
+  padding-left: 10px;
 }
 main #ordering ul.left {
   float: left;
@@ -168,18 +156,78 @@ main #ordering ul.right {
 main #ordering ul.bottom {
   clear: both;
 }
+main #ordering #price {
+  color: #036128;
+}
+main #gallery {
+  padding: 0;
+  text-align: center;
+  border-top: #4DAF18 solid 4px;
+  border-bottom: #4DAF18  solid 4px;
+}
+main #gallery #column {
+  display: inline-block;
+  margin: 0;
+  font-size: 1.25em;
+}
+main #gallery #column img {
+  display: block;
+}
+main #gallery h1 {
+  font-size: 1.75em;
+  font-family: 'Abel', sans-serif;
+  color: #CF0021 ;
+  font-weight: 600;
+  padding: 20px 0;
+  text-align: center;
+}
+main #location {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  border-top: #8AC2F1 solid 4px;
+  border-bottom: #4DAF18  solid 4px;
+  display: block;
+  z-index: 0;
+  /* Image of food carts  */
+}
+main #location p {
+  font-size: 20px;
+  font-family: 'Abel', sans-serif;
+  color: #000 ;
+  font-weight: 600;
+  margin-top: 10px;
+}
+main #location img {
+  display: block;
+  width: 100%;
+  margin-bottom: -5px;
+}
+main map {
+  margin: 30px 0 0 0;
+  display: block;
+}
+/* Footer Section */
 footer {
   background-color: #036128;
   color: #FFF;
   font-family: 'Scada', sans-serif;
-  padding: 10px 0;
+  padding: 0;
+  z-index: 1024;
+  border-top: #8AC2F1 solid 4px;
+  /* Social media icons */
+  /* Chefs bios section */
+  /* Phone for Mobile */
+  /* Social Media Section */
+  /* Copyright Section */
 }
 footer h3 {
   margin: 20px 0;
   text-align: center;
   font-size: 1.5em;
   font-family: 'Abel', sans-serif;
-  color: #EE6111 ;
+  color: #FFF ;
   font-weight: 600;
   line-height: 80%;
 }
@@ -188,45 +236,303 @@ footer h4 {
   padding: 10px 0 0 20px;
   font-size: 1.25em;
   font-family: 'Abel', sans-serif;
-  color: #EE6111 ;
+  color: #FFF ;
   font-weight: 600;
   line-height: 80%;
 }
-footer a {
-  color: #EE6111 ;
-  text-decoration: none;
-}
-footer a:hover {
-  color: #FFF;
-}
-footer P {
-  margin: 20px 20px;
+footer p {
   font-size: 1.125em;
+  color: #FFF;
+  margin: .5em 1em 0 1em;
+}
+footer img {
+  width: 42px;
 }
 footer #bios {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 footer #bios h4 {
   text-align: start;
-  padding: 10px 0 0 20px;
-  margin: 0 0 20px 0;
+  padding: 0 0 0 20px;
+  margin: 0;
   font-size: 1em;
   font-family: 'Abel', sans-serif;
   color: #FFF ;
   font-weight: 600;
   line-height: 80%;
 }
+footer #phone {
+  text-align: center;
+  margin: 20px 0;
+}
 footer #social {
   text-align: center;
+  margin-bottom: 2em;
 }
 footer #social h3 {
   text-align: center;
 }
-footer #phone {
-  text-align: center;
+footer #social a {
+  margin: 0 .75em 2em .75em;
 }
-footer #copyright {
+footer #copyright h3 {
+  font-size: 1.75em;
+}
+footer #copyright p {
   text-align: center;
-  color: #EE6111;
-  padding-top: 10px;
+  color: #FFF;
+  margin-top: 1em;
+  padding-bottom: 1em;
+}
+/*  LAYOUT BELOW 280 PIXELS */
+@media only screen and (max-width: 280px) {
+  /* Global */
+  body {
+    min-width: 270px;
+  }
+  /* Header */
+  header h2 {
+    padding: 120px 0 60px 0;
+  }
+  /* Navigation */
+  nav a h1 {
+    font-size: 3.25em;
+  }
+}
+/*  LAYOUT ABOVE 300 PIXELS */
+@media only screen and (min-width: 300px) {
+  /* Header */
+  header h2 {
+    padding: 130px 0 60px 0;
+  }
+  /* Navigation */
+  nav a h1 {
+    font-size: 3.25em;
+  }
+}
+/*  LAYOUT ABOVE 380 PIXELS */
+@media only screen and (min-width: 380px) {
+  /* Header */
+  header h2 {
+    padding: 150px 0 60px 0;
+  }
+  /* Navigation */
+  nav a h1 {
+    font-size: 3.25em;
+  }
+}
+/*  LAYOUT ABOVE 465 PIXELS */
+@media only screen and (min-width: 465px) {
+  /* Header */
+  header h2 {
+    padding: 200px 0 60px 0;
+  }
+  /* Navigation */
+  nav a h1 {
+    font-size: 3.25em;
+  }
+}
+/*  LAYOUT ABOVE 600 PIXELS */
+@media only screen and (min-width: 600px) {
+  /* Header */
+  header h2 {
+    padding: 250px 0 60px 0;
+  }
+}
+/*  LAYOUT ABOVE 769 PIXELS */
+@media only screen and (min-width: 769px) {
+  /* Header */
+  header {
+    height: 550px;
+  }
+  header h2 {
+    padding: 425px 0 60px 0;
+    font-size: 5vw;
+  }
+  main {
+    /* Location Section */
+  }
+  main #location p {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  main #location img {
+    margin: 30px 0 -15px 0;
+  }
+  main #ordering {
+    /* Left column of Toppings */
+    /* Right column of Toppings */
+  }
+  main #ordering #steps {
+    margin-top: 9px !important;
+  }
+  main #ordering h3 {
+    margin-left: 40px;
+    font-size: 130%;
+    font-stretch: extra-expanded;
+  }
+  main #ordering ul li {
+    margin-left: 40px;
+  }
+  main #ordering ul.left {
+    margin-left: 0;
+  }
+  main #ordering ul.right {
+    margin-right: 20px;
+  }
+  footer {
+    /* Phone for mobile */
+    /* Phone for desktop and tablet */
+  }
+  footer #social {
+    text-align: center;
+  }
+  footer #social h3 {
+    text-align: center;
+  }
+  footer #social h2 {
+    font-size: 1.75vw;
+    padding-top: 40px;
+  }
+  footer #social img {
+    margin: 5px 5px 10px 5px;
+    width: 40px;
+  }
+  footer #phone {
+    display: none;
+  }
+  footer #phone_desktop {
+    text-align: center;
+  }
+  footer #phone_desktop h3 {
+    text-align: center;
+    margin-right: 15px;
+  }
+  footer #phone_desktop p {
+    font-size: 3vw;
+    margin-top: 25px;
+  }
+}
+/*  LAYOUT ABOVE 1024 PIXELS */
+@media only screen and (min-width: 1024px) {
+  /* Navigation */
+  nav a h1 {
+    font-size: 6vw;
+  }
+  /* Header */
+  header {
+    height: 600px;
+  }
+  header h2 {
+    font-size: 4.5vw;
+  }
+  main {
+    /* Gallery Section */
+    /* Location Section */
+  }
+  main h1 {
+    font-size: 3vw;
+  }
+  main #gallery h1 {
+    font-size: 3vw;
+  }
+  main #location img {
+    margin: 30px 0 -10px 0;
+  }
+  main #location p {
+    font-size: 22px;
+  }
+  main #ordering {
+    /* Right column of Toppings */
+  }
+  main #ordering h2 {
+    font-size: 3vw;
+  }
+  main #ordering h3 {
+    margin-left: 100px;
+    font-size: 2vw;
+  }
+  main #ordering ul li {
+    margin-left: 80px;
+  }
+  main #ordering ul.right {
+    margin-right: 60px;
+    padding-right: 0;
+  }
+  main #ordering ul li {
+    font-size: 2vw;
+  }
+  footer {
+    /* Social media icons */
+    /* Phone for desktop and tablet */
+  }
+  footer img {
+    padding-top: 10px;
+    margin: 10px 5px 100px 5px;
+    width: 40px;
+    display: inline-block;
+  }
+  footer h3 {
+    font-size: 2.5vw;
+  }
+  footer h4 {
+    font-size: 2.5vw;
+  }
+  footer #phone_desktop {
+    text-align: center;
+  }
+  footer #phone_desktop h3 {
+    text-align: center;
+    margin-right: 15px;
+  }
+  footer #phone_desktop p {
+    font-size: 2.5vw;
+  }
+}
+/*  LAYOUT ABOVE 1200 PIXELS */
+@media only screen and (min-width: 1200px) {
+  /* Header */
+  header {
+    height: 750px;
+  }
+  header h2 {
+    font-size: 50px;
+    padding: 550px 0 60px 0;
+  }
+  header img {
+    height: 500px;
+  }
+  /* Navigation */
+  nav a h1 {
+    font-size: 5vw;
+  }
+  main {
+    /* Gallery Section */
+    /* Location Section */
+  }
+  main h1 {
+    font-size: 2.5vw;
+  }
+  main #gallery h1 {
+    font-size: 2.5vw;
+  }
+  main #location h1 {
+    font-size: 2.5vw;
+  }
+  main #location map {
+    display: block;
+    margin: 30px 0 0 0;
+  }
+  main #location p {
+    font-size: 25px;
+  }
+  main #ordering h2 {
+    font-size: 2.5vw;
+  }
+  footer h3 {
+    font-size: 2vw;
+  }
+  footer h4 {
+    font-size: 2vw;
+  }
 }

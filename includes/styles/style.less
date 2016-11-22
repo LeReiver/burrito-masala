@@ -1,3 +1,12 @@
+/**
+ * Programmer: Michael Le-Reiver
+ * Date: 11/1/16
+ * Time: 11:43 AM
+ * File: style.less
+ * Description: Nested CSS styles for LESS compiling
+ */
+
+/* Global Styles */
 body {
     color: #EE6111;
     font-family: 'Scada', sans-serif;
@@ -11,51 +20,62 @@ body {
     }
 }
 
+/* Navigation Section - Fixed to top of screen. */
 nav {
-    a h1 {
-         text-align: center;
-         margin: 0 ;
-         font-weight: 900;
-         font-size: 3em;
-         font-family: 'Abel', sans-serif;
-         color: #EE6111;
-         padding: 5px 0;
-         text-decoration: none;
-     }
-    a h1:hover {
-        color: #036128;
-    }
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    //background-color: #8AC2F1;
     background-color: white;
     position: fixed;
     top: 0;
     width: 100%;
     border-top: #CF0021 solid 4px;
     border-bottom: #4DAF18 solid 4px;
-    z-index: 3;
+    z-index: 100;
+    a h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 2.75em;
+        font-family: 'Abel', sans-serif;
+        padding: 5px 0;
+        text-decoration: none;
+        #burrito {
+            font-weight: 900;
+            color: #036128;
+        }
+        #masala {
+            font-weight: 200;
+            color: #EE6111;
+            text-shadow: .25px 2px black;
+        }
+    }
     #top {
-        margin-top: -40px;
+        margin-top: -50px;
         line-height: 10%;
         font-size: .5em;
     }
 }
 
+/* Header Section */
 header {
     h2 {
         text-align: center;
         margin: 0 auto 30px auto;
-        padding: 125px 0 60px 0;
-        font-size: 1.5em;
-        font-weight: 500;
-        color: rgba(225,225,225,.9);
+        padding: 120px 0 60px 0;
+        font-size: 6vw;
+        font-weight: 700;
+        color: #fff;
+        text-shadow: #000 .25px .5px;
+        font-family: 'Abel', sans-serif;
     }
-    background-image: linear-gradient(rgba(100, 100, 100, 0.35),rgba(0, 0, 0, 0.35)),
-        url("../images/hero_mobile.jpg");
-    margin-top: 50px;
+    /**  Gradient overlay on hero image.
+    * Hero Image Place holder.
+    * - Replace url of new image in tag below
+    */
+    background-image: linear-gradient(rgba(10, 10, 10, .001),rgba(0, 0, 0, 0.80)),
+        url("../images/hero.jpg");
+    margin-top: 30px;
     padding: 0;
     width: 100%;
     height: 60vw;
@@ -68,6 +88,7 @@ header {
     position: relative;
 }
 
+/* Main Section */
 main {
     z-index: 0;
     border-top: #4DAF18 solid 4px;
@@ -84,109 +105,131 @@ main {
             color:#036128;
         }
     }
-    #location {
-        text-align: center;
-        width: 100%;
-        margin: 0 auto;
-        border-top: #036128 solid 4px;
-        p {
-            color: #EE6111;
-            font-family: 'Scada', sans-serif;
+    /* Ordering Section */
+    #ordering {
+        padding:  0 0 20px 0;
+        border-top: #8AC2F1 solid 4px;
+        border-bottom: #8AC2F1  solid 4px;
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            font-size: 1.75em;
+            font-family: 'Abel', sans-serif;
+            color: #CF0021 ;
+            font-weight: 600;
+            padding: 10px 0;
+        }
+        h3 {
+            text-align: start;
+            padding: 10px 0 0 5px;
             font-size: 1.25em;
-            font-weight: 500;
+            font-family: 'Abel', sans-serif;
+            color: #000 ;
+            font-weight: 600;
+            line-height: 80%;
+            #steps {
+                color: #EE6111;
+            }
+        }
+        ul {
+            padding-left: 0;
+            li {
+                font-size: 1.2em;
+                font-family: 'Abel', sans-serif;
+                color: #000 ;
+                font-weight: 600;
+                line-height: 120%;
+                padding-left: 10px;
+            }
+        }
+        /* Left column of Toppings */
+        ul.left {
+            float:left;
+        }
+        /* Right column of Toppings */
+        ul.right {
+            float: right;
+            padding-right: 4em;
+        }/* Bottom column of Toppings - Grandmas salsa */
+        ul.bottom {
+            clear: both;
+        }
+        /* Green color for dollar sign */
+        #price {
+            color: #036128;
         }
     }
-    map {
-       display: block;
-       margin: 30px;
-        border: #EE6111  solid 4px;
-    }
+    /* Gallery Section */
     #gallery {
-        padding: 0 0 20px 0;
-        ul {
-            li {
-                background-color: #EE6111;
-                display: inline-block;
-                margin: 0;
-                padding-bottom: 10px;
-                border-top: #CF0021  solid 2px;
-                font-size: 1.25em;
-                img {
-                border-bottom: #4DAF18  solid 2px;
-                }
+        padding: 0;
+        text-align: center;
+        border-top: #4DAF18 solid 4px;
+        border-bottom: #4DAF18  solid 4px;
+        #column {
+            display: inline-block;
+            margin: 0;
+            font-size: 1.25em;
+            img {
+                display: block;
             }
-        text-align: center; 
         }
         h1 {
             font-size: 1.75em;
             font-family: 'Abel', sans-serif;
             color: #CF0021 ;
             font-weight: 600;
-            padding-top: 20px;
+            padding: 20px 0;
             text-align: center;
         }
     }
-    #ordering {
-        background-color: rgba(138, 194, 241, 0.45);
-        padding:  0 0 20px 0;
-        margin-top: -20px;
-        border-top: #CF0021 solid 4px;
-        h1 {
+    /* Location Section */
+    #location {
         text-align: center;
-        }
-        h2 {
-        text-align: center;
-        font-size: 1.75em;
-        font-family: 'Abel', sans-serif;
-        color: #CF0021 ;
-        font-weight: 600;
-        padding: 10px 0;
-        }
-        h3 {
-            text-align: start;
-            padding: 10px 0 0 20px;
-            font-size: 1.25em;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        border-top: #8AC2F1 solid 4px;
+        border-bottom: #4DAF18  solid 4px;
+        display: block;
+        z-index: 0;
+        p {
+            font-size: 20px;
             font-family: 'Abel', sans-serif;
-            color: #EE6111 ;
+            color: #000 ;
             font-weight: 600;
-            line-height: 80%;
+            margin-top: 10px;
         }
-        ul {
-            padding-left:.5em;
-            li {
-                font-size: 1.2em;
-                font-family: 'Abel', sans-serif;
-                color: #EE6111 ;
-                font-weight: 600;
-                line-height: 120%;
-                list-style: disc;
-                padding-left: .5em;
-            }
+        /* Image of food carts  */
+        img {
+            display: block;
+            width: 100%;
+            margin-bottom: -5px;
         }
-        ul.left {
-            float:left;
-        }
-        ul.right {
-            float: right;
-            padding-right: 4em;
-         }
-        ul.bottom {
-            clear: both;
-        }
+    }
+    /* Map */
+    map {
+        margin: 30px 0 0 0;
+        display: block;
     }
 }
 
+/* Footer Section */
 footer {
     background-color: #036128;
     color: #FFF;
     font-family: 'Scada', sans-serif;
-    padding: 10px 0;
+    padding: 0;
+    z-index: 1024;
+    border-top: #8AC2F1 solid 4px;
+
     h3 {
         margin: 20px 0;
         text-align: center;
         font-size: 1.5em;
         font-family: 'Abel', sans-serif;
-        color: #EE6111 ;
+        color: #FFF ;
         font-weight: 600;
         line-height: 80%;
     }
@@ -195,27 +238,26 @@ footer {
          padding: 10px 0 0 20px;
          font-size: 1.25em;
          font-family: 'Abel', sans-serif;
-         color: #EE6111 ;
+         color: #FFF ;
          font-weight: 600;
          line-height: 80%;
      }
-    a {
-        color: #EE6111 ;
-        text-decoration: none;
-    }
-    a:hover {
-        color: #FFF;
-    }
-    P {
-        margin: 20px 20px;
+    p {
         font-size: 1.125em;
+        color: #FFF;
+        margin: .5em 1em 0 1em;
     }
+    /* Social media icons */
+    img {
+        width: 42px;
+    }
+    /* Chefs bios section */
     #bios {
-        padding: 20px 0;
+        padding: 10px 0;
         h4 {
             text-align: start;
-            padding: 10px 0 0 20px;
-            margin: 0 0 20px 0;
+            padding: 0 0 0 20px;
+            margin: 0;
             font-size: 1em;
             font-family: 'Abel', sans-serif;
             color: #FFF ;
@@ -223,19 +265,341 @@ footer {
             line-height: 80%;
         }
     }
+
+    /* Phone for Mobile */
+    #phone {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    /* Social Media Section */
     #social {
         text-align: center;
+        margin-bottom: 2em;
         h3 {
             text-align: center;
         }
+        a {
+            margin: 0 .75em 2em .75em;
+        }
     }
-    #phone {
-        text-align: center;
-
-    }
+    /* Copyright Section */
     #copyright {
-        text-align: center;
-        color: #EE6111;
-        padding-top: 10px;
+        h3{
+            font-size: 1.75em;
+        }
+        p {
+            text-align: center;
+            color: #FFF;
+            margin-top: 1em;
+            padding-bottom: 1em;
+        }
     }
 }
+
+/*  LAYOUT BELOW 280 PIXELS */
+@media only screen and (max-width: 280px) {
+    /* Global */
+    body {
+        min-width: 270px;
+    }
+    /* Header */
+    header {
+        h2 {
+            padding: 120px 0 60px 0;
+        }
+    }
+    /* Navigation */
+    nav {
+        a h1 {
+            font-size: 3.25em;
+        }
+    }
+}
+
+/*  LAYOUT ABOVE 300 PIXELS */
+@media only screen and (min-width: 300px) {
+    /* Header */
+    header {
+        h2 {
+            padding: 130px 0 60px 0;
+        }
+    }
+/* Navigation */
+    nav {
+        a h1 {
+            font-size: 3.25em;
+        }
+    }
+}
+
+
+/*  LAYOUT ABOVE 380 PIXELS */
+@media only screen and (min-width: 380px) {
+    /* Header */
+    header {
+        h2 {
+            padding: 150px 0 60px 0;
+        }
+    }
+/* Navigation */
+    nav {
+        a h1 {
+            font-size: 3.25em;
+        }
+    }
+}
+/*  LAYOUT ABOVE 465 PIXELS */
+@media only screen and (min-width: 465px) {
+    /* Header */
+    header {
+        h2 {
+            padding: 200px 0 60px 0;
+        }
+    }
+    /* Navigation */
+    nav {
+        a h1 {
+            font-size: 3.25em;
+        }
+    }
+}
+
+/*  LAYOUT ABOVE 600 PIXELS */
+@media only screen and (min-width: 600px) {
+    /* Header */
+    header {
+            h2 {
+                padding: 250px 0 60px 0;
+        }
+    }
+}
+
+/*  LAYOUT ABOVE 769 PIXELS */
+@media only screen and (min-width: 769px) {
+
+    /* Header */
+    header {
+        h2 {
+            padding: 425px 0 60px 0;
+            font-size: 5vw;
+        }
+        height: 550px;
+    }
+    main {
+        /* Location Section */
+        #location {
+            p {
+                font-size: 20px;
+                margin-top: 15px;
+            }
+            img {
+                margin: 30px 0 -15px 0;
+            }
+        }
+        #ordering {
+            #steps {
+                margin-top: 9px !important;
+            }
+            h3 {
+                margin-left: 40px;
+                font-size: 130%;
+                font-stretch: extra-expanded;
+
+            }
+            ul {
+                li {
+                    margin-left: 40px;
+                }
+            }
+            /* Left column of Toppings */
+            ul.left {
+                   margin-left: 0;
+               }
+            /* Right column of Toppings */
+            ul.right{
+                margin-right: 20px;
+            }
+        }
+    }
+    footer {
+        #social {
+            text-align: center;
+            h3 {
+                text-align: center;
+            }
+            h2 {
+                font-size: 1.75vw;
+                padding-top: 40px;
+            }
+            img {
+                //padding-top: 10px;
+                margin: 5px 5px 10px 5px;
+                width: 40px;
+            }
+        }
+        /* Phone for mobile */
+        #phone {
+            display: none;
+        }
+        /* Phone for desktop and tablet */
+        #phone_desktop {
+            text-align: center;
+            h3 {
+                text-align: center;
+                margin-right: 15px;
+        }
+            p {
+                font-size: 3vw;
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+/*  LAYOUT ABOVE 1024 PIXELS */
+@media only screen and (min-width: 1024px) {
+
+    /* Navigation */
+    nav {
+        a h1 {
+            font-size: 6vw;
+        }
+    }
+    /* Header */
+    header {
+        h2 {
+            font-size: 4.5vw;
+        }
+        height: 600px;
+    }
+    main {
+        h1 {
+            font-size: 3vw;
+        }
+        /* Gallery Section */
+        #gallery h1 {
+            font-size: 3vw;
+        }
+        /* Location Section */
+        #location {
+            img {
+                margin: 30px 0 -10px 0;
+            }
+            p {
+                font-size: 22px;
+            }
+
+        }
+        #ordering {
+            h2 {
+                font-size: 3vw;
+            }
+            h3 {
+                margin-left: 100px;
+                font-size: 2vw;
+            }
+            ul {
+                li {
+                    margin-left: 80px;
+                }
+            }
+            /* Right column of Toppings */
+            ul.right {
+                margin-right: 60px;
+                padding-right: 0;
+            }
+            ul {
+                li {
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+
+    footer {
+        /* Social media icons */
+        img {
+            padding-top: 10px;
+            margin: 10px 5px 100px 5px;
+            width: 40px;
+            display: inline-block;
+        }
+        h3 {
+            font-size: 2.5vw;
+        }
+        h4 {
+             font-size: 2.5vw;
+         }
+        /* Phone for desktop and tablet */
+        #phone_desktop {
+            text-align: center;
+            h3 {
+                text-align: center;
+                margin-right: 15px;
+            }
+            p {
+                font-size: 2.5vw;
+            }
+        }
+    }
+}
+
+/*  LAYOUT ABOVE 1200 PIXELS */
+@media only screen and (min-width: 1200px) {
+    /* Header */
+    header {
+        height: 750px;
+        h2 {
+            font-size: 50px;
+            padding: 550px 0 60px 0;
+        }
+        img {
+            height: 500px;
+        }
+    }
+    /* Navigation */
+    nav {
+        a h1 {
+            font-size: 5vw;
+        }
+    }
+
+    main {
+        h1 {
+            font-size: 2.5vw;
+        }
+        /* Gallery Section */
+        #gallery h1 {
+            font-size: 2.5vw;
+        }
+        /* Location Section */
+        #location  {
+            h1 {
+                font-size: 2.5vw;
+            }
+            map {
+                display: block;
+                margin: 30px 0 0 0;
+            }
+            p {
+                font-size: 25px;
+            }
+        }
+        #ordering {
+            h2 {
+                font-size: 2.5vw;
+            }
+        }
+    }
+    footer {
+        h3 {
+            font-size: 2vw;
+        }
+        h4 {
+            font-size: 2vw;
+        }
+    }
+}
+
+
