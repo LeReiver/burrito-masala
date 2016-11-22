@@ -6,7 +6,6 @@
  * File: smooth_scroll.php
  * Description: A function that provides smooth animated scrolling.
  */
-require_once('head_files.php')
 ?>
 <script>
     $(function() {

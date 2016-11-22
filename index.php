@@ -28,12 +28,28 @@
  *      - Dark green (#036128) is used for the logo and footer
  *      - Bright green (#4DAF18) is used for bordering sections.
  *      - Orange (#EE6111) is used for the logo.
+ * SEO Assets:
+ *      - Description: Burrito Masala is a fictitious food cart located in downtown
+ *          Portland, OR that specializes in delicious southern Indian (Kerala) and Mexican foods... stuffed
+ *          in a flour tortilla! Diners can also opt to go gluten free with our bowl options. We’re run by a
+ *          husband and wife team (James Beard award­winning chefs Prasad Varma and Ramona Varma­Hernandez)
+ *      - Keywords: Burrito Masala, burrito masala, burrito, masala, tikka, pork, verde,
+ *          sambar, aloo gobi, chili relleno, chutney, curry, kerala, biryani, rice bowl, vegan, modern, spicy,
+ *          exotic, fusion, food cart, Southern Indian, Mexican, Portland, Oregon, downtown
 -->
 <html lang="en">
 <head>
-    <!--Includes head files file-->
-    <?php require_once('includes/scripts/head_files.php'); ?>
-    <title>Burrito Masala</title>
+<title>Burrito Masala</title>
+<!-- Metadata Tags -->
+<meta name="description" content="Burrito Masala is a fictitious food cart located in downtown
+    Portland, OR that specializes in delicious southern Indian (Kerala) and Mexican foods... stuffed
+    in a flour tortilla! Diners can also opt to go gluten free with our bowl options. We’re run by a
+    husband and wife team (James Beard award­winning chefs Prasad Varma and Ramona Varma­Hernandez)"> <!-- Description for search engines-->
+<meta name="keyword" content="Burrito Masala, burrito masala, burrito, masala, tikka, pork, verde,
+    sambar, aloo gobi, chili relleno, chutney, curry, kerala, biryani, rice bowl, vegan, modern, spicy,
+    exotic, fusion, food cart, Southern Indian, Mexican, Portland, Oregon, downtown "> <!--Keywords for SEO -->
+<!--Includes head files file-->
+<?php require_once('includes/utility/head_files.php'); ?>
 </head>
 
 <body>
@@ -140,7 +156,7 @@
         </section>
     </main>
 <!-- Requires footer file  -->
-    <?php require ('footer.php');?>
+<?php require ('footer.php');?>
 <!-- Requires smooth scrolling script for anchor tags   -->
 <?php require('includes/scripts/smooth_scroll.php');?>
 </body>
