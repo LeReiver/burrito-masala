@@ -48,7 +48,7 @@
 <meta name="keyword" content="Burrito Masala, burrito masala, burrito, masala, tikka, pork, verde,
     sambar, aloo gobi, chili relleno, chutney, curry, kerala, biryani, rice bowl, vegan, modern, spicy,
     exotic, fusion, food cart, Southern Indian, Mexican, Portland, Oregon, downtown "> <!--Keywords for SEO -->
-<!--Includes head files file-->
+<!--Requires use of head files file-->
 <?php require_once('includes/utility/head_files.php'); ?>
 </head>
 
@@ -155,9 +155,9 @@
             </div>
         </section>
     </main>
-<!-- Requires footer file  -->
+<!-- Requires use of footer file  -->
 <?php require ('footer.php');?>
-<!-- Requires smooth scrolling script for anchor tags   -->
+<!-- Requires use of smooth scrolling script for anchor tags   -->
 <?php require('includes/scripts/smooth_scroll.php');?>
 </body>
 </html>
