@@ -64,6 +64,6 @@
     </div>
 <!--    Copyright info-->
     <section id="copyright">
-        <p>&copy; 2016 Burrito Masala <br>Designed by Le-Reiver</p>
+        <p>&copy; 2016 Burrito Masala <br>Designed by LeReiver</p>
     </section>
 </footer>
